@@ -4,50 +4,10 @@ export default function Footer() {
   return (
     <footer className="text-center px-4 lg:px-40 py-4 h-12 sm:h-20 w-full sm:pt-2 pt-4 border-t mt-5 flex sm:flex-row flex-col justify-between items-center space-y-3 sm:mb-0 mb-3 border-gray-200">
       <div className="text-gray-500">
-        <Link
-          className="text-blue-600 hover:underline font-bold"
-          href="https://github.com/leap-ai/headshots-starter"
-          target="_blank"
-        >
-          Open-source
-        </Link>{" "}
-        powered by{" "}
-        <Link
-          className="text-blue-600 hover:underline font-bold"
-          href="https://tryleap.ai/"
-          target="_blank"
-        >
-          Leap AI,{" "}
-        </Link>
-        <Link
-          className="text-blue-600 hover:underline font-bold"
-          href="https://supabase.com/"
-          target="_blank"
-        >
-          Supabase,{" "}
-        </Link>
-        and{" "}
-        {process.env.DEPLOYMENT_PROVIDER === "replit" ? (
-          <Link
-            className="text-blue-600 hover:underline font-bold"
-            href="https://replit.com/@leap-ai/Headshot-AI-Professional-Headshots-with-Leap-AI"
-            target="_blank"
-          >
-            Replit{" "}
-          </Link>
-        ) : (
-          <Link
-            className="text-blue-600 hover:underline font-bold"
-            href="https://vercel.com/"
-            target="_blank"
-          >
-            Vercel.
-          </Link>
-        )}
       </div>
       <div className="flex space-x-4 pb-4 sm:pb-0">
         <Link
-          href="https://twitter.com/leap_api"
+          href="#"
           className="group"
           aria-label="Twitter"
           target="_blank"
@@ -59,19 +19,18 @@ export default function Footer() {
             <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0 0 22 5.92a8.19 8.19 0 0 1-2.357.646 4.118 4.118 0 0 0 1.804-2.27 8.224 8.224 0 0 1-2.605.996 4.107 4.107 0 0 0-6.993 3.743 11.65 11.65 0 0 1-8.457-4.287 4.106 4.106 0 0 0 1.27 5.477A4.073 4.073 0 0 1 2.8 9.713v.052a4.105 4.105 0 0 0 3.292 4.022 4.093 4.093 0 0 1-1.853.07 4.108 4.108 0 0 0 3.834 2.85A8.233 8.233 0 0 1 2 18.407a11.615 11.615 0 0 0 6.29 1.84" />
           </svg>
         </Link>
-        <Link
-          href="https://github.com/leap-ai/headshots-starter"
+        <a
+          href="#"
           className="group"
           aria-label="GitHub"
           target="_blank"
         >
-          <svg
-            aria-hidden="true"
-            className="h-6 w-6 fill-gray-500 group-hover:fill-gray-300"
-          >
-            <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z" />
-          </svg>
-        </Link>
+
+<svg className="h-6 w-6 fill-gray-500 group-hover:fill-gray-300" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 768 768">
+<path d="M672 391.5q0-66-23.25-120t-63.75-93.75-92.25-60.75-108.75-21-108 21-92.25 60-64.5 93.75-23.25 122.25q-15 7.5-23.25 22.5t-8.25 33v63q0 27 18.75 45.75t44.25 18.75h33v-195q0-46.5 17.25-87t48-71.25 71.25-48 87-17.25 87 17.25 71.25 48 48 71.25 17.25 87v226.5h-255v64.5h255q27 0 45.75-18.75t18.75-45.75v-39q13.5-7.5 22.5-21t9-31.5v-73.5q0-16.5-9-30t-22.5-21zM256.5 415.5q0-13.5 9-22.5t22.5-9 22.5 9 9 22.5-9 23.25-22.5 9.75-22.5-9.75-9-23.25zM448.5 415.5q0-13.5 9-22.5t22.5-9 22.5 9 9 22.5-9 23.25-22.5 9.75-22.5-9.75-9-23.25zM576 352.5q-7.5-45-34.5-81.75t-67.5-57.75-88.5-21q-36 0-72 14.25t-64.5 41.25-44.25 65.25-12.75 86.25q60-25.5 102-75t54-114q21 42 55.5 74.25t78.75 50.25 93.75 18z"></path>
+</svg>
+
+        </a>
       </div>
     </footer>
   );
