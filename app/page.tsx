@@ -54,7 +54,7 @@ Solved by AI! Train a custom model with your f*ucked up photos, and create your 
             alt="AI Headshot Illustration"
             className="rounded-lg object-cover w-full h-full"
           />
-          <AutoplayVideo src="/videos/video.mp4" />
+          <AutoplayVideo src="/videos/vid.mp4" />
         </div>
       </div>
       <ExplainerSection />
