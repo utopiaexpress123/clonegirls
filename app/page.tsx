@@ -48,7 +48,7 @@ Solved by AI! Train a custom model with your f*ucked up photos, and create your 
             </Link>
           </div>
         </div>
-        <div className="lg:w-1/2 w-full mt-8 lg:mt-0">
+        <div className="lg:w-1/2 w-full mt-1 lg:mt-0">
           <img
             src={hero.src}
             alt="AI Headshot Illustration"
