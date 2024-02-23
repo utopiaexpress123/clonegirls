@@ -23,7 +23,42 @@ export default async function Index() {
   }
 
   return (
-    <div className="flex flex-col items-center pt-16">
+
+
+    <section className="w-full py-12 md:py-24 lg:py-32">
+    <div className="container grid items-center gap-10 px-6 md:px-10 lg:gap-16 lg:grid-cols-2">
+      <div className="flex items-center">
+        <img
+          alt="Image"
+          className="aspect-[2/1] rounded-xl object-cover"
+          height="300"
+          src="/placeholder.svg"
+          width="600"
+        />
+      </div>
+      <div className="flex flex-col justify-center space-y-4">
+        <div className="space-y-2">
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+            Welcome to the Platform
+          </h1>
+          <p className="max-w-[500px] text-gray-500 md:text-xl dark:text-gray-400">
+            The complete platform for building the modern web. One toolkit. Zero configuration.
+          </p>
+        </div>
+        <div>
+          <Link
+            className="inline-flex items-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+            href="#"
+          >
+            Get Started
+          </Link>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+    <div className="flex flex-col items-center pt-1">
       <div className="flex flex-col lg:flex-row items-center gap-8 p-8 max-w-6xl w-full">
         <div className="flex flex-col space-y-4 lg:w-1/2 w-full">
           <h1 className="text-5xl font-bold">
