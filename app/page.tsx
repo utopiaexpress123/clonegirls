@@ -3,7 +3,7 @@ import { cookies } from "next/headers";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import hero from "/public/hero.png";
-
+import AutoplayVideo from "@/components/AutoplayVideo";
 import { Button } from "@/components/ui/button";
 import ExplainerSection from "@/components/ExplainerSection";
 import PricingSection from "@/components/PricingSection";
@@ -54,6 +54,7 @@ Solved by AI! Train a custom model with your f*ucked up photos, and create your 
             alt="AI Headshot Illustration"
             className="rounded-lg object-cover w-full h-full"
           />
+          <AutoplayVideo src="/videos/video.mp4" />
         </div>
       </div>
       <ExplainerSection />
