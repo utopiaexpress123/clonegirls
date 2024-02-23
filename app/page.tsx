@@ -2,7 +2,6 @@ import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from "next/headers";
 import Link from "next/link";
 import { redirect } from "next/navigation";
-
 import hero from "/public/hero.png";
 
 import { Button } from "@/components/ui/button";
@@ -23,7 +22,6 @@ export default async function Index() {
   }
 
   return (
-
 
     <div className="flex flex-col items-center pt-1">
       <div className="flex flex-col lg:flex-row items-center gap-8 p-8 max-w-6xl w-full">
