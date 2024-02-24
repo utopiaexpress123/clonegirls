@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export interface UploadIconProps {
   className?: string;
@@ -13,14 +13,21 @@ export interface RocketIconProps {
 }
 
 export default function HowItWorks() {
-
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 text-left">
+    <section className="w-full py-12 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6">
-        <div className="space-y-3">
+        <div className="space-y-3 text-center">
+          <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">How It Works</div>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+            Streamline your workflow in 3 easy steps
+          </h2>
+          <p className="max-w-[700px] mx-auto text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+            Let us handle the complexity of the cloud, so you can focus on shipping code.
+          </p>
+        </div>
         <div className="grid items-start gap-6 lg:grid-cols-1 lg:gap-12">
-          <div className="flex flex-col items-start justify-center space-y-6">
-            <div className="flex flex-col items-start justify-center space-y-2">
+          <div className="flex flex-col items-center justify-center space-y-6">
+            <div className="flex flex-col items-center justify-center space-y-2">
               <div className="rounded-full border w-12 h-12 flex items-center justify-center border-gray-200 border-gray-200 bg-gray-50 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950">
                 <UploadIcon className="w-6 h-6 fill-primary" />
               </div>
@@ -29,16 +36,16 @@ export default function HowItWorks() {
                 Get started in seconds. Connect your Git repository and we'll do the rest.
               </p>
             </div>
-            <div className="flex flex-col items-start justify-center space-y-2">
+            <div className="flex flex-col items-center justify-center space-y-2">
               <div className="rounded-full border w-12 h-12 flex items-center justify-center border-gray-200 border-gray-200 bg-gray-50 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950">
-                <ImageIcon className="w-6 h-6 fill-primary" />
+                <CodeIcon className="w-6 h-6 fill-primary" />
               </div>
-              <h3 className="text-xl font-bold">Get amazing portraits</h3>
+              <h3 className="text-xl font-bold">Code review workflow</h3>
               <p className="text-sm text-gray-500 dark:text-gray-400">
                 Collaborate with your team using built-in code review tools without leaving your workflow.
               </p>
             </div>
-            <div className="flex flex-col items-start justify-center space-y-2">
+            <div className="flex flex-col items-center justify-center space-y-2">
               <div className="rounded-full border w-12 h-12 flex items-center justify-center border-gray-200 border-gray-200 bg-gray-50 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950">
                 <RocketIcon className="w-6 h-6 fill-primary" />
               </div>
@@ -55,7 +62,8 @@ export default function HowItWorks() {
   )
 }
 
-function ImageIcon(props) {
+
+function UploadIcon(props) {
   return (
     <svg
       {...props}
@@ -69,9 +77,30 @@ function ImageIcon(props) {
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-      <circle cx="9" cy="9" r="2" />
-      <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+      <polyline points="17 8 12 3 7 8" />
+      <line x1="12" x2="12" y1="3" y2="15" />
+    </svg>
+  )
+}
+
+
+function CodeIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <polyline points="16 18 22 12 16 6" />
+      <polyline points="8 6 2 12 8 18" />
     </svg>
   )
 }
@@ -98,26 +127,3 @@ function RocketIcon(props) {
     </svg>
   )
 }
-
-
-function UploadIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-      <polyline points="17 8 12 3 7 8" />
-      <line x1="12" x2="12" y1="3" y2="15" />
-    </svg>
-  )
-}
-
