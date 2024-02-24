@@ -39,10 +39,9 @@ export default async function Index() {
         <div className="flex flex-col space-y-4 lg:w-1/2 w-full">
           <div className="mt-4">
             <MainHero/>
-            <HowItWorks/>
           </div>
           <div className="mt-4">
-            <ExplainerSection />
+            <HowItWorks/>
           </div>
         </div>
         <div className="lg:w-1/2 w-full mt-1 lg:mt-0">
