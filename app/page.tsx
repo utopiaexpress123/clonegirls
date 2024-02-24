@@ -2,7 +2,7 @@ import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from "next/headers";
 import Link from "next/link";
 import { redirect } from "next/navigation";
-import hero from "/public/hero.png";
+//import hero from "/public/hero.png";
 import AutoplayVideo from "@/components/ui/autoplayvideo";
 import { Button } from "@/components/ui/button";
 import ExplainerSection from "@/components/ExplainerSection";
@@ -49,11 +49,6 @@ Solved by AI! Train a custom model with your f*ucked up photos, and create your 
           </div>
         </div>
         <div className="lg:w-1/2 w-full mt-1 lg:mt-0">
-          <img
-            src={hero.src}
-            alt="AI Headshot Illustration"
-            className="rounded-lg object-cover w-full h-full"
-          />
           <AutoplayVideo src="/videos/vid.mp4" />
         </div>
       </div>
