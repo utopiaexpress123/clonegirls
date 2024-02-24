@@ -39,6 +39,7 @@ export default async function Index() {
         <div className="flex flex-col space-y-4 lg:w-1/2 w-full">
           <div className="mt-4">
             <MainHero/>
+            <HowItWorks/>
           </div>
           <div className="mt-4">
             <ExplainerSection />
@@ -62,7 +63,6 @@ export default async function Index() {
           </AccordionItem>
         </Accordion> 
       </div>
-      <HowItWorks/>
     </div>
   );
 }
