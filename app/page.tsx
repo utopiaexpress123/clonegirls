@@ -15,7 +15,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { ThreeSteps } from "@/components/component/three-steps";
+
+import HowItWorks from "@/components/component/how-it-works";
 
 
 export const dynamic = "force-dynamic";
@@ -78,7 +79,7 @@ export default async function Index() {
           </AccordionItem>
         </Accordion> 
       </div>
-      <ThreeSteps/>
+      <HowItWorks/>
     </div>
   );
 }
