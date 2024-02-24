@@ -9,7 +9,7 @@ import ExplainerSection from "@/components/ExplainerSection";
 //import PricingSection from "@/components/PricingSection";
 //import UtopiaLogo from "@/components/UtopiaLogo";
 import CloneButton from "@/components/ui/clonebutton";
-import kep from "/public/kep.gif";
+
 
 
 export const dynamic = "force-dynamic";
