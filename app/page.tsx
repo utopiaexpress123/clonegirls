@@ -7,7 +7,7 @@ import hero from "/public/hero.png";
 import { Button } from "@/components/ui/button";
 import ExplainerSection from "@/components/ExplainerSection";
 import PricingSection from "@/components/PricingSection";
-import  { Slideshow } from "@/components/ui/slideshow";
+import UtopiaLogo from "@/components/UtopiaLogo";
 
 export const dynamic = "force-dynamic";
 
@@ -58,7 +58,6 @@ Solved by AI! Train a custom model with your f*ucked up photos, and create your 
         </div>
       </div>
       <ExplainerSection />
-      <Slideshow />
     </div>
   );
 }
