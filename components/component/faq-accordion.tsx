@@ -3,6 +3,9 @@
  * @see https://v0.dev/t/WJcVn7VLiFa
  */
 import { CollapsibleTrigger, CollapsibleContent, Collapsible } from "@/components/ui/collapsible"
+export interface ChevronDownIcon {
+  className?: string;
+}
 
 export function FaqAccordion() {
   return (
@@ -81,7 +84,7 @@ export function FaqAccordion() {
 }
 
 
-function ChevronDownIcon(props) {
+function ChevronDownIcon(props: ChevronDownIcon) {
   return (
     <svg
       {...props}
