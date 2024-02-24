@@ -9,6 +9,7 @@ import ExplainerSection from "@/components/ExplainerSection";
 //import PricingSection from "@/components/PricingSection";
 //import UtopiaLogo from "@/components/UtopiaLogo";
 import CloneButton from "@/components/ui/clonebutton";
+import kep from "/public/kep.gif";
 
 
 export const dynamic = "force-dynamic";
@@ -39,7 +40,13 @@ export default async function Index() {
           </p>
           <div className="flex flex-col space-y-2">
             <Link href="/login">
-              <Button className="drop-shadow-md	w-full lg:w-1/2">Get your portraits</Button>
+              <Button className="drop-shadow-md	w-full lg:w-1/2">
+              <img
+            src={kep.src}
+            alt="AI Headshot Illustration"
+            className="object-cover w-full h-full"
+              />
+                Get your portraits</Button>
             </Link>
             <CloneButton/>
             <p className="text-sm text-gray-500 italic">
