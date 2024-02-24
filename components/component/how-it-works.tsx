@@ -3,6 +3,7 @@
  * @see https://v0.dev/t/rRc69Is8NoT
  */
 
+import React from 'react'
 
 export default function HowItWorks() {
   return (
