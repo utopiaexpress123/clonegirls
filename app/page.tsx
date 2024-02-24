@@ -2,11 +2,12 @@ import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from "next/headers";
 import Link from "next/link";
 import { redirect } from "next/navigation";
-//import hero from "/public/hero.png";
-import AutoplayVideo from "@/components/ui/autoplayvideo";
+import hero from "/public/hero.png";
+//import AutoplayVideo from "@/components/ui/autoplayvideo";
 import { Button } from "@/components/ui/button";
 import ExplainerSection from "@/components/ExplainerSection";
 import PricingSection from "@/components/PricingSection";
+import  { Slideshow } from "@/components/ui/slideshow";
 
 export const dynamic = "force-dynamic";
 
@@ -49,11 +50,15 @@ Solved by AI! Train a custom model with your f*ucked up photos, and create your 
           </div>
         </div>
         <div className="lg:w-1/2 w-full mt-1 lg:mt-0">
-          <AutoplayVideo src="/videos/vid.mp4" />
+          <img
+            src={hero.src}
+            alt="AI Headshot Illustration"
+            className="object-cover w-full h-full"
+          />
         </div>
       </div>
       <ExplainerSection />
-      <PricingSection />
+      <Slideshow />
     </div>
   );
 }
