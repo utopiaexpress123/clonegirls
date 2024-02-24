@@ -15,6 +15,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { ThreeSteps } from "@/components/component/three-steps";
 
 
 export const dynamic = "force-dynamic";
