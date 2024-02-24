@@ -9,9 +9,9 @@ export function MainHero() {
     return (
       <section className="w-full py-6 md:py-12 lg:py-16 xl:py-24">
         <div className="container px-4 md:px-6 flex flex-col items-start gap-2">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">This is not an insta-filter - It's real magic</h1>
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Meet your photogenic clone</h1>
           <p className="max-w-[700px] text-gray-500 dark:text-gray-400">
-          Upload some photos of you, and create your digital clone.
+          It's definitely you, just a better version.
           Our AI-based service is able to "learn" your unique characteristics, 
           create your digital counterpart, and take breathtaking pictures featuring you.
           </p>

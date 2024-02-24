@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 
 export interface UploadIconProps {
   className?: string;
@@ -19,11 +20,18 @@ export default function HowItWorks() {
         <div className="space-y-3 text-center">
           <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">How It Works</div>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            Streamline your workflow in 3 easy steps
+          How It Works
           </h2>
           <p className="max-w-[700px] mx-auto text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-            Let us handle the complexity of the cloud, so you can focus on shipping code.
+          Use your camera or upload at least 6-12 pictures of you (or the person you want to clone). Make sure that only you are in the picture and that your face is clearly visible.
           </p>
+          <p className="text-xs text-gray-500 dark:text-gray-400">
+          <Link
+            href="#"
+          >
+            Learn more
+          </Link>
+          about how to get the best results.</p>
         </div>
         <div className="grid items-start gap-6 lg:grid-cols-1 lg:gap-12">
           <div className="flex flex-col items-center justify-center space-y-6">
@@ -31,9 +39,9 @@ export default function HowItWorks() {
               <div className="rounded-full border w-12 h-12 flex items-center justify-center border-gray-200 border-gray-200 bg-gray-50 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950">
                 <UploadIcon className="w-6 h-6 fill-primary" />
               </div>
-              <h3 className="text-xl font-bold">Connect your repository</h3>
+              <h3 className="text-xl font-bold">The magic begins</h3>
               <p className="text-sm text-gray-500 dark:text-gray-400">
-                Get started in seconds. Connect your Git repository and we'll do the rest.
+                
               </p>
             </div>
             <div className="flex flex-col items-center justify-center space-y-2">
