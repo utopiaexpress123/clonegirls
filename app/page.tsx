@@ -61,13 +61,7 @@ export default async function Index() {
           />
         </div>
       </div>
-      
-
-
     </div>
-
-
-      <Chatbot />
-
+    <Chatbot />
   );
 }
