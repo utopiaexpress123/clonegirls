@@ -52,16 +52,12 @@
 
 .btn-clone {
   transition: 200ms all;
-  font-size: 0.8em;
   border-radius: 30px;
-  box-shadow: 0px 1px 1px rgba(3, 7, 18, 0.01),
-              0px 3px 4px rgba(3, 7, 18, 0.01),
-              0px 6px 9px rgba(3, 7, 18, 0.02),
-              0px 11px 15px rgba(3, 7, 18, 0.02),
-              0px 17px 24px rgba(3, 7, 18, 0.03);
+  box-shadow: 0 1px 1px rgba(3,7,18,.01), 0 3px 4px rgba(3,7,18,.01), 0 6px 9px rgba(3,7,18,.02), 0 11px 15px rgba(3,7,18,.02), 0 17px 24px rgba(3,7,18,.03);
   text-decoration: none;
-  padding: 13px 10px 13px 10px;
+  padding: 5px 5px;
   color: #212529;
+  background: rgb(253, 243, 230);
 }
 
 .btn-clone:hover {
