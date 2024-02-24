@@ -4,7 +4,7 @@ import result from "/public/result.png";
 
 export default function ExplainerSection() {
   return (
-    <div className="w-full max-w-6xl mt-16 p-8 bg-gray-100 rounded-lg space-y-8">
+    <div className="w-full max-w-6xl mt-16 p-8 bg-slate-100 rounded-lg space-y-8">
       <h2 className="text-3xl font-bold text-center mb-8">How It Works</h2>
 
       {/* Step 1: Upload your images */}

@@ -40,7 +40,7 @@ export default async function Navbar() {
         <img width="93px" height="16px"
             src={logo.src}
             alt="Utopia Express"
-            className="object-cover w-full h-full"
+            className="object-cover"
           />
         </Link>
       </div>
