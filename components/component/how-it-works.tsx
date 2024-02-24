@@ -63,7 +63,7 @@ export default function HowItWorks() {
 }
 
 
-function UploadIcon(props) {
+function UploadIcon(props: UploadIconProps) {
   return (
     <svg
       {...props}
@@ -85,7 +85,7 @@ function UploadIcon(props) {
 }
 
 
-function CodeIcon(props) {
+function CodeIcon(props: CodeIconProps) {
   return (
     <svg
       {...props}
@@ -106,7 +106,7 @@ function CodeIcon(props) {
 }
 
 
-function RocketIcon(props) {
+function RocketIcon(props: RocketIconProps) {
   return (
     <svg
       {...props}
