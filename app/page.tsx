@@ -77,6 +77,7 @@ export default async function Index() {
           </AccordionItem>
         </Accordion> 
       </div>
+      <ThreeSteps/>
     </div>
   );
 }
