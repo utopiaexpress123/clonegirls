@@ -15,7 +15,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-
+import { MainHero } from "@/components/component/main-hero";
 import HowItWorks from "@/components/component/how-it-works";
 
 
@@ -37,25 +37,8 @@ export default async function Index() {
     <div className="flex flex-col items-center pt-2">
       <div className="flex flex-col lg:flex-row items-center gap-8 p-8 max-w-6xl w-full">
         <div className="flex flex-col space-y-4 lg:w-1/2 w-full">
-          <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl">
-          This is not an insta-filter - It's real magic
-          </h1>
-          <p className="text-gray-600 text-lg">
-          Upload some photos of you, and create your digital clone.
-          Our AI-based service is able to "learn" your unique characteristics, 
-          create your digital counterpart, and take breathtaking pictures featuring you.
-          </p>
-          <div className="flex flex-col space-y-2">
-            <CloneButton/>
-            <p className="text-sm text-gray-500 italic">
-              Trusted by professionals worldwide. Quick and efficient.
-            </p>
-          </div>
-          <div className="mt-4 text-gray-500">
-            <span>Already a member? </span>
-            <Link className="text-blue-600 hover:underline" href="/login">
-              Sign In
-            </Link>
+          <div className="mt-4">
+            <MainHero/>
           </div>
           <div className="mt-4">
             <ExplainerSection />
