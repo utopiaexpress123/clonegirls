@@ -3,12 +3,6 @@
  * @see https://v0.dev/t/dfzBJHpTPBe
  */
 
-import { JSX, SVGProps } from "react"
-
-import { JSX, SVGProps } from "react"
-
-import { JSX, SVGProps } from "react"
-
 
 export function ThreeSteps() {
   return (
