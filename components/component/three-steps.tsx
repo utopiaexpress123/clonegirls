@@ -3,6 +3,12 @@
  * @see https://v0.dev/t/dfzBJHpTPBe
  */
 
+import { JSX, SVGProps } from "react"
+
+import { JSX, SVGProps } from "react"
+
+import { JSX, SVGProps } from "react"
+
 
 export function ThreeSteps() {
   return (
@@ -55,7 +61,7 @@ export function ThreeSteps() {
 }
 
 
-function UploadCloudIcon(props) {
+function UploadCloudIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -77,7 +83,7 @@ function UploadCloudIcon(props) {
 }
 
 
-function CodeIcon(props) {
+function CodeIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -98,7 +104,7 @@ function CodeIcon(props) {
 }
 
 
-function RocketIcon(props) {
+function RocketIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
