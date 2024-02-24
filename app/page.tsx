@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import ExplainerSection from "@/components/ExplainerSection";
 //import PricingSection from "@/components/PricingSection";
 //import UtopiaLogo from "@/components/UtopiaLogo";
+import Chatbot from "@/components/ui/Chatbot";
 
 
 export const dynamic = "force-dynamic";
@@ -63,6 +64,10 @@ export default async function Index() {
       
 
 
+    </div>
+
+    <div>
+      <Chatbot />
     </div>
   );
 }
