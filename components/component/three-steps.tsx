@@ -41,7 +41,7 @@ export function ThreeSteps() {
               alt="Image"
               className="aspect-video overflow-hidden rounded-xl object-cover object-center"
               height="280"
-              src="/example"
+              src="/example.png"
               width="500"
             />
           </li>
