@@ -21,10 +21,8 @@ export function ThreeSteps() {
             </div>
             <img
               alt="Image"
-              className="aspect-video overflow-hidden rounded-xl object-cover object-center"
-              height="280"
+              className="aspect-video overflow-hidden rounded-xl object-contain object-center"
               src="/example.png"
-              width="500"
             />
           </li>
           <li className="flex flex-col items-center justify-center space-y-2">
