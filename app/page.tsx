@@ -9,7 +9,12 @@ import ExplainerSection from "@/components/ExplainerSection";
 //import PricingSection from "@/components/PricingSection";
 //import UtopiaLogo from "@/components/UtopiaLogo";
 import CloneButton from "@/components/ui/clonebutton";
-
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "/components/ui/accordion";
 
 
 export const dynamic = "force-dynamic";
@@ -61,6 +66,16 @@ export default async function Index() {
             className="object-cover w-full h-full"
           />
         </div>
+      </div>
+      <div className="flex flex-col lg:flex-row items-center gap-8 p-8 max-w-6xl w-full">
+        <Accordion type="single" collapsible>
+          <AccordionItem value="item-1">
+            <AccordionTrigger>Is it accessible?</AccordionTrigger>
+            <AccordionContent>
+              Yes. It adheres to the WAI-ARIA design pattern.
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion> 
       </div>
     </div>
   );
