@@ -12,7 +12,7 @@ import CloneButton from "@/components/ui/clonebutton";
 import { MainHero } from "@/components/component/main-hero";
 import HowItWorks from "@/components/component/how-it-works";
 import { FaqAccordion } from "@/components/component/faq-accordion";
-
+import { ThreeSteps } from "@/components/component/three-steps";
 
 export const dynamic = "force-dynamic";
 
@@ -36,13 +36,13 @@ export default async function Index() {
             <MainHero/>
           </div>
           <div className="mt-1">
-            <HowItWorks/>
+            <ThreeSteps/>
           </div>
         </div>
         <div className="lg:w-1/2 w-full mt-1 lg:mt-0">
           <img
             src={hero.src}
-            alt="AI Headshot Illustration"
+            alt="AI photography of you"
             className="object-cover w-full h-full"
           />
         </div>
