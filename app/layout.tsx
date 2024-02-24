@@ -2,6 +2,13 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";
+import { Inter as FontSans } from "next/font/google";
+import { cn } from "../@/lib/utils";
+export const fontSans = FontSans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
+
 import { Suspense } from "react";
 
 export const metadata = {
@@ -12,7 +19,10 @@ export const metadata = {
 export default function RootLayout({ children }: any) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col">
+      <body className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          fontSans.variable
+        )}>
           <section>
             <Suspense fallback={<div className="flex w-full px-4 lg:px-40 py-4 items-center border-b text-center gap-8 justify-between h-[69px]" />}>
               <Navbar />

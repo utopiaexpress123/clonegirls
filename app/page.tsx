@@ -39,15 +39,6 @@ export default async function Index() {
           create your digital counterpart, and take breathtaking pictures featuring you.
           </p>
           <div className="flex flex-col space-y-2">
-            <Link href="/login">
-              <Button className="drop-shadow-md	w-full lg:w-1/2">
-              <img
-            src={kep.src}
-            alt="AI Headshot Illustration"
-            className="object-cover w-full h-full"
-              />
-                Get your portraits</Button>
-            </Link>
             <CloneButton/>
             <p className="text-sm text-gray-500 italic">
               Trusted by professionals worldwide. Quick and efficient.
