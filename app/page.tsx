@@ -8,12 +8,7 @@ import { Button } from "@/components/ui/button";
 import ExplainerSection from "@/components/ExplainerSection";
 //import PricingSection from "@/components/PricingSection";
 //import UtopiaLogo from "@/components/UtopiaLogo";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+
 
 export const dynamic = "force-dynamic";
 
@@ -65,14 +60,7 @@ export default async function Index() {
         </div>
       </div>
       <ExplainerSection />
-      <Accordion type="single" collapsible>
-        <AccordionItem value="item-1">
-          <AccordionTrigger>Is it accessible?</AccordionTrigger>
-          <AccordionContent>
-            Yes. It adheres to the WAI-ARIA design pattern.
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
+
 
     </div>
   );
