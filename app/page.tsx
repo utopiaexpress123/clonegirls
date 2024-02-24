@@ -28,15 +28,16 @@ export default async function Index() {
       <div className="flex flex-col lg:flex-row items-center gap-8 p-8 max-w-6xl w-full">
         <div className="flex flex-col space-y-4 lg:w-1/2 w-full">
           <h1 className="text-5xl font-bold">
-          Finally have a good photo of you!
+          This is not an insta-filter - It's real magic
           </h1>
           <p className="text-gray-600 text-lg">
-         You are not so photogenic?
-Solved by AI! Train a custom model with your f*ucked up photos, and create your good lookin' clone
+          Upload some photos of you, and create your digital clone.
+          Our AI-based service is able to "learn" your unique characteristics, 
+          create your digital counterpart, and take breathtaking pictures featuring you.
           </p>
           <div className="flex flex-col space-y-2">
             <Link href="/login">
-              <Button className="w-full lg:w-1/2">Get Your Headshots</Button>
+              <Button className="w-full lg:w-1/2">Get your portraits</Button>
             </Link>
             <p className="text-sm text-gray-500 italic">
               Trusted by professionals worldwide. Quick and efficient.
