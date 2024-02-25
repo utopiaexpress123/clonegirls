@@ -46,7 +46,7 @@ export function MainHero() {
               alt="Double helix"
               className="rounded-full mr-2"
               height={34}
-              src="/kep.gif"
+              src="/man.png"
               style={{
                 aspectRatio: "34/34",
                 objectFit: "cover",
