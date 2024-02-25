@@ -7,7 +7,7 @@ import { Card } from "@/components/ui/card"
 export function HowItWoks() {
   return (
     <>
-      <Card className="flex w-full items-center border-transparent p-4 mt-4">
+      <Card className="flex w-full items-center border-transparent shadow-none p-4 mt-4">
         <div className="flex items-flex-start justify-center w-32 h-32 rounded-sm text-gray-100 dark:text-gray-100 font-bold text-8xl">
           01
         </div>
