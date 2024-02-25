@@ -9,13 +9,12 @@ export function TrainProcess() {
     <div className="w-full py-12">
       <div className="container flex flex-col gap-12 px-4 md:px-6">
         <div className="flex flex-col gap-2">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">How it works</h2>
+          <h2 className=" text-gray-500 dark:text-gray-400 text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">How it works</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-[minmax(auto,400px)] gap-12">
           <div className="flex items-start gap-4">
             <div className="flex flex-col items-center">
-              <div className="w-2 h-2 rounded-full border border-gray-200 border-gray-200 bg-white shadow-sm dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950" />
-              <div className="w-2 h-8 rounded-full border border-gray-200 border-gray-200 bg-gray-200 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950/90" />
+              <div className="w-8 h-8 rounded-full border border-gray-200 border-gray-200 bg-gray-200 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950/90" />
             </div>
             <div className="flex flex-col gap-1.5">
               <div className="flex items-center gap-2">
