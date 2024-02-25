@@ -14,10 +14,8 @@ export function MainHero() {
           Create your digital counterpart, and take breathtaking pictures featuring you.
           It's definitely you, just a better version.
           </p>
-          <p>
-            21 photo - 21€
           <Link
-            className="inline-flex w-100 items-center rounded-full shadow-xl hover:shadow-2xl bg-gray-900 dark:bg-gray-900 text-white text-sm font-normal px-2 py-1"
+            className="inline-flex w-100 items-center rounded-full shadow-lg hover:shadow-xl bg-gray-900 dark:bg-gray-900 text-white text-sm font-normal px-2 py-1"
             href="./login"
             style={{
               borderRadius: "50px",
@@ -36,7 +34,6 @@ export function MainHero() {
             />
             Create Your Clone&nbsp;&nbsp; 
           </Link>
-          </p>
             <p className="text-xs text-gray-500 dark:text-gray-400">
             Already a member?
             <Link className="underline" href="#">
