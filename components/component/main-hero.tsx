@@ -14,7 +14,7 @@ export function MainHero() {
           It's definitely you, just a better version. 
           Create your digital counterpart, and take breathtaking pictures featuring you.
           </p>
-          <p className="text-xs text-gray-500 dark:text-gray-400">
+          
           <Link
             className="inline-flex h-10 items-center rounded-md border border-gray-200 border-gray-200 bg-white px-4 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
             href="#"
@@ -24,7 +24,7 @@ export function MainHero() {
           >
             <img
               alt="Double helix"
-              className="rounded-full mr-2"
+              className="rounded-full mr-2rounded-full flex items-center justify-between shadow dark:hover:shadow-lg dark:hover:bg-gray-800 dark:hover:text-white"
               height={34}
               src="/kep.gif"
               style={{
@@ -35,7 +35,7 @@ export function MainHero() {
             />
             Create Your Clone
           </Link>
-          
+          <p className="text-xs text-gray-500 dark:text-gray-400">
             Already a member?
             <Link className="underline" href="#">
               Sign In

@@ -31,7 +31,7 @@ export default async function Index() {
     <div className="flex flex-col items-center pt-0">
       <div className="flex flex-col lg:flex-row items-center gap-8 p-8 max-w-6xl w-full">
         <div className="flex flex-col space-y-4 lg:w-1/2 w-full">
-          <div className="mt-0">
+          <div className="py-6">
             <MainHero/>
           </div>
           <div className="px-4 items-center">

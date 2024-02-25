@@ -13,7 +13,7 @@ export function HowItWoks() {
         </div>
         <div className="grid gap-2 ml-6">
           <p className="text-lg font-semibold">Upload your photos</p>
-          <p className="max-w-[700px] text-gray-500 dark:text-gray-400">
+          <p className="text-sm text-gray-500 dark:text-gray-400">
           Upload at least 6-12 pictures of the person you want to clone. Make sure that only you are in the picture and that your face is clearly visible.
           </p>
           <img
@@ -38,7 +38,7 @@ export function HowItWoks() {
         </div>
         <div className="grid gap-2 ml-6">
           <p className="text-lg font-semibold">Do the magic</p>
-          <p className="max-w-[700px] text-gray-500 dark:text-gray-400">Our AI-based service able "learn" your unique features and reproduce them down to the smallest detail.</p>
+          <p className="text-sm text-gray-500 dark:text-gray-400">Our AI-based service able "learn" your unique features and reproduce them down to the smallest detail.</p>
 
         </div>
       </Card>
@@ -51,7 +51,7 @@ export function HowItWoks() {
         </div>
         <div className="grid gap-2 ml-6">
           <p className="text-lg font-semibold">Get your amazing photos</p>
-          <p className="max-w-[700px] text-gray-500 dark:text-gray-400">With your own model, any picture can be taken of you, as if you had a professional photographer. The only limit is your imagination.</p>
+          <p className="text-sm text-gray-500 dark:text-gray-400">With your own model, any picture can be taken of you, as if you had a professional photographer. The only limit is your imagination.</p>
 
         </div>
       </Card>
