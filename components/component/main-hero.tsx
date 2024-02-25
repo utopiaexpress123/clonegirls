@@ -14,8 +14,8 @@ export function MainHero() {
           Create your digital counterpart, and take breathtaking pictures featuring you.
           It's pure magic!
           </p>
-          <div>
-             <span className="text-sm">from </span><span className="text-lg text-bold">12€</span>
+          <div className="flex items-center">
+             <span className="text-sm font-thin">from </span><span className="text-lg font-bold">12€</span>
              <Link
               className="inline-flex w-100 items-center rounded-full shadow-lg hover:shadow-xl bg-pink-50 hover:bg-pink-100 dark:bg-pink-100 text-black-800 text-sm font-normal px-2 py-1 mr-2"
               href="./login"
