@@ -9,7 +9,7 @@ import hero from "/public/hero.png";
 //import PricingSection from "@/components/PricingSection";
 //import UtopiaLogo from "@/components/UtopiaLogo";
 import { MainHero } from "@/components/component/main-hero";
-import HowItWorks from "@/components/component/how-it-works";
+import { HowItWoks } from "@/components/component/how-it-woks";
 import { FaqAccordion } from "@/components/component/faq-accordion";
 
 
@@ -35,7 +35,7 @@ export default async function Index() {
             <MainHero/>
           </div>
           <div className="mt-1">
-            <HowItWorks/>
+            <HowItWoks/>
           </div>
         </div>
         <div className="lg:w-1/2 w-full mt-1 lg:mt-0">
