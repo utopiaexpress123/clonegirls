@@ -4,15 +4,14 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import hero from "/public/hero.png";
 //import AutoplayVideo from "@/components/ui/autoplayvideo";
-import { Button } from "@/components/ui/button";
-import ExplainerSection from "@/components/ExplainerSection";
+//import { Button } from "@/components/ui/button";
+//import ExplainerSection from "@/components/ExplainerSection";
 //import PricingSection from "@/components/PricingSection";
 //import UtopiaLogo from "@/components/UtopiaLogo";
-import CloneButton from "@/components/ui/clonebutton";
 import { MainHero } from "@/components/component/main-hero";
 import HowItWorks from "@/components/component/how-it-works";
 import { FaqAccordion } from "@/components/component/faq-accordion";
-import { TrainProcess } from "@/components/component/train-process";
+
 
 export const dynamic = "force-dynamic";
 
@@ -36,7 +35,7 @@ export default async function Index() {
             <MainHero/>
           </div>
           <div className="mt-1">
-            <TrainProcess/>
+            <HowItWorks/>
           </div>
         </div>
         <div className="lg:w-1/2 w-full mt-1 lg:mt-0">
