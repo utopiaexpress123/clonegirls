@@ -24,7 +24,7 @@ export function MainHero() {
           >
             <img
               alt="Double helix"
-              className="rounded-full mr-2rounded-full flex items-center justify-between shadow dark:hover:shadow-lg dark:hover:bg-gray-800 dark:hover:text-white"
+              className="inline-flex h-10 items-center rounded-md border border-gray-200 border-gray-200 bg-white px-2 py-3 text-sm font-medium shadow-lg hover:shadow-xl transition-colors hover:bg-gray-900 hover:text-gray-900 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
               height={34}
               src="/kep.gif"
               style={{
@@ -33,7 +33,7 @@ export function MainHero() {
               }}
               width={34}
             />
-            Create Your Clone
+            Create Your Clone 
           </Link>
           <br></br>
           <p className="text-xs text-gray-500 dark:text-gray-400">
