@@ -39,17 +39,7 @@ export function HowItWoks() {
         <div className="grid gap-2 ml-6">
           <p className="text-lg font-semibold">Do the magic</p>
           <p className="text-sm text-gray-500">Our AI-based service able "learn" your unique features and reproduce them down to the smallest detail.</p>
-          <img
-            alt="02"
-            className="mt-4 object-cover rounded-lg"
-            height="auto"
-            src="/example.png"
-            style={{
-              aspectRatio: "full/auto",
-              objectFit: "cover",
-            }}
-            width="full"
-          />
+
         </div>
       </Card>
       <div className="flex items-center justify-center w-full">
@@ -62,17 +52,7 @@ export function HowItWoks() {
         <div className="grid gap-2 ml-6">
           <p className="text-lg font-semibold">Get your amazing photos</p>
           <p className="text-sm text-gray-500">With your own model, any picture can be taken of you, as if you had a professional photographer. The only limit is your imagination.</p>
-          <img
-            alt="03"
-            className="mt-4 object-cover rounded-lg"
-            height="auto"
-            src="/example.png"
-            style={{
-              aspectRatio: "full/auto",
-              objectFit: "cover",
-            }}
-            width="full"
-          />
+
         </div>
       </Card>
     </>
