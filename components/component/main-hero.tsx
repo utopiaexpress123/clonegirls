@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export function MainHero() {
     return (
-      <section className="w-full py-3 md:py-4 lg:py-4 xl:py-4">
+      <section className="w-full">
         <div className="container px-4 md:px-6 flex flex-col items-start gap-2">
           <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Meet your AI clone</h1>
           <p className="max-w-[700px] text-gray-500 dark:text-gray-400">
