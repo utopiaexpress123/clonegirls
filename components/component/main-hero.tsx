@@ -14,13 +14,14 @@ export function MainHero() {
           Create your digital counterpart, and take breathtaking pictures featuring you.
           It's definitely you, just a better version.
           </p>
-          <Link
-            className="inline-flex w-100 items-center rounded-full shadow-lg hover:shadow-xl bg-gray-900 dark:bg-gray-900 text-white text-sm font-normal px-2 py-1"
-            href="./login"
-            style={{
-              borderRadius: "50px",
-            }}
-          >
+          <div>
+            <Link
+              className="inline-flex w-100 items-center rounded-full shadow-lg hover:shadow-xl bg-gray-900 dark:bg-gray-900 text-white text-sm font-normal px-2 py-1"
+              href="./login"
+              style={{
+                borderRadius: "50px",
+              }}
+            >
             <img
               alt="Double helix"
               className="rounded-full mr-2"
@@ -33,14 +34,34 @@ export function MainHero() {
               width={34}
             />
             Create Your Clone&nbsp;&nbsp; 
-          </Link>
+            </Link>
+            <Link
+              className="inline-flex w-100 items-center rounded-full shadow-lg hover:shadow-xl bg-gray-900 dark:bg-gray-900 text-white text-sm font-normal px-2 py-1"
+              href="./login"
+              style={{
+                borderRadius: "50px",
+              }}
+            >
+            <img
+              alt="Double helix"
+              className="rounded-full mr-2"
+              height={34}
+              src="/kep.gif"
+              style={{
+                aspectRatio: "34/34",
+                objectFit: "cover",
+              }}
+              width={34}
+            />
+            Create Your Clone&nbsp;&nbsp; 
+            </Link>
             <p className="text-xs text-gray-300 dark:text-gray-500">
             Already a member?
             <Link className="underline" href="#">
               Sign In
             </Link>
             </p>
-          
+          </div>
         </div>
       </section>
     )
