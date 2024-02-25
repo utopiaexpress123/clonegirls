@@ -16,7 +16,7 @@ export function MainHero() {
           </p>
           <div>
              <Link
-              className="inline-flex w-100 items-center rounded-full shadow-lg hover:shadow-xl bg-pink-50 hover:bg-pink-100 dark:bg-pink-100 text-black-800 text-sm font-normal px-2 py-1"
+              className="inline-flex w-100 items-center rounded-full shadow-lg hover:shadow-xl bg-pink-50 hover:bg-pink-100 dark:bg-pink-100 text-black-800 text-sm font-normal px-2 py-1 mr-2"
               href="./login"
               style={{
                 borderRadius: "50px",
@@ -33,10 +33,10 @@ export function MainHero() {
               }}
               width={34}
             />
-            Create Your Clone&nbsp;&nbsp; 
+            for Girls&nbsp;&nbsp; 
             </Link>
             <Link
-              className="inline-flex w-100 items-center rounded-full shadow-lg hover:shadow-xl bg-blue-50 hover:bg-blue-100 dark:bg-blue-100 text-black-800 text-sm font-normal px-2 py-1"
+              className="inline-flex w-100 items-center rounded-full shadow-lg hover:shadow-xl bg-blue-50 hover:bg-blue-100 dark:bg-blue-100 text-black-800 text-sm font-normal px-2 py-1 ml-2"
               href="./login"
               style={{
                 borderRadius: "50px",
@@ -53,9 +53,9 @@ export function MainHero() {
               }}
               width={34}
             />
-            Create Your Clone&nbsp;&nbsp; 
+            for Boys&nbsp;&nbsp; 
             </Link>
-            <p className="text-xs text-gray-300 dark:text-gray-500">
+            <p className="py-2 text-xs text-gray-300 dark:text-gray-500">
             Already a member?
             <Link className="underline" href="#">
               Sign In
