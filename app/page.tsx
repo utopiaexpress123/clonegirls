@@ -28,10 +28,10 @@ export default async function Index() {
 
   return (
 
-    <div className="flex flex-col items-center pt-2">
+    <div className="flex flex-col items-center pt-0">
       <div className="flex flex-col lg:flex-row items-center gap-8 p-8 max-w-6xl w-full">
         <div className="flex flex-col space-y-4 lg:w-1/2 w-full">
-          <div className="mt-1">
+          <div className="mt-0">
             <MainHero/>
           </div>
           <div className="px-4 items-center">
@@ -42,7 +42,7 @@ export default async function Index() {
           <img
             src={hero.src}
             alt="AI photography of you"
-            className="object-cover w-full h-full"
+            className="object-cover rounded w-full h-full"
           />
         </div>
       </div>
