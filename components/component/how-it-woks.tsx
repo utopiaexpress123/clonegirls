@@ -8,8 +8,8 @@ export function HowItWoks() {
   return (
     <>
       <Card className="flex w-full items-start p-4 shadow-lg m-4">
-        <div className="flex items-center justify-center w-16 h-16 rounded-lg text-gray-300 dark:text-gray-300 font-extrabold text-6xl">
-          1
+        <div className="flex items-center justify-center w-16 h-16 rounded-lg text-gray-100 dark:text-gray-100 font-thin text-8xl">
+          01
         </div>
         <div className="grid gap-2 ml-6">
           <p className="text-lg font-semibold">Upload your photos</p>
@@ -33,8 +33,8 @@ export function HowItWoks() {
         <div className="h-6 w-0.5 bg-gray-200 dark:bg-gray-800" />
       </div>
       <Card className="flex w-full items-start p-4 shadow-lg m-4">
-        <div className="flex items-center justify-center w-16 h-16 rounded-lg text-gray-300 dark:text-gray-300 font-extrabold text-6xl">
-          2
+        <div className="flex items-center justify-center w-16 h-16 rounded-lg text-gray-100 dark:text-gray-100 font-thin text-8xl">
+          02
         </div>
         <div className="grid gap-2 ml-6">
           <p className="text-lg font-semibold">Do the magic</p>
@@ -56,8 +56,8 @@ export function HowItWoks() {
         <div className="h-6 w-0.5 bg-gray-200 dark:bg-gray-800" />
       </div>
       <Card className="flex w-full items-start p-4 shadow-lg m-4">
-        <div className="flex items-center justify-center w-16 h-16 rounded-lg text-gray-300 dark:text-gray-300 font-extrabold text-6xl">
-          3
+        <div className="flex items-center justify-center w-16 h-16 rounded-lg text-gray-100 dark:text-gray-100 font-thin text-8xl">
+          03
         </div>
         <div className="grid gap-2 ml-6">
           <p className="text-lg font-semibold">Get your amazing photos</p>
