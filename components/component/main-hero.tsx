@@ -10,7 +10,7 @@ export function MainHero() {
       <section className="w-full">
         <div className="container px-4 md:px-6 flex flex-col items-start gap-2">
           <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Meet your digital clone</h1>
-          <p className="py-2 max-w-[700px] text-gray-500 dark:text-gray-400">
+          <p className="py-2 text-lg max-w-[700px] text-gray-500 dark:text-gray-400">
           Create your digital counterpart, and take breathtaking pictures featuring you.
           It's definitely you, just a better version.
           </p>
