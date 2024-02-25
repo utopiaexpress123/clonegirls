@@ -7,7 +7,7 @@ import { Card } from "@/components/ui/card"
 export function HowItWoks() {
   return (
     <>
-      <Card className="flex w-full items-center p-4 shadow-lg border-0">
+      <Card className="flex w-full items-center p-4 ">
         <div className="flex items-center justify-center w-32 h-32 rounded-sm text-gray-100 dark:text-gray-100 font-bold text-8xl">
           01
         </div>
@@ -32,7 +32,7 @@ export function HowItWoks() {
       <div className="flex items-center justify-center w-full">
         <div className="h-9 w-0.5 bg-gray-200 dark:bg-gray-800" />
       </div>
-      <Card className="flex w-full items-center p-4 shadow-lg border-0">
+      <Card className="flex w-full items-center p-4">
         <div className="flex items-center justify-center w-32 h-32 rounded-lg text-gray-100 dark:text-gray-100 font-bold text-8xl">
           02
         </div>
@@ -45,7 +45,7 @@ export function HowItWoks() {
       <div className="flex items-center justify-center w-full">
         <div className="h-9 w-0.5 bg-gray-200 dark:bg-gray-800" />
       </div>
-      <Card className="flex w-full items-center p-4 shadow-lg border-0">
+      <Card className="flex w-full items-center p-4">
         <div className="flex items-center justify-center w-32 h-32 rounded-lg text-gray-100 dark:text-gray-100 font-bold text-8xl">
           03
         </div>
