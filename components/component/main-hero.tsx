@@ -9,14 +9,14 @@ export function MainHero() {
     return (
       <section className="w-full py-3 md:py-4 lg:py-4 xl:py-4">
         <div className="container px-4 md:px-6 flex flex-col items-start gap-2">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Create your photogenic clone</h1>
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Meet your AI clone</h1>
           <p className="max-w-[700px] text-gray-500 dark:text-gray-400">
           It's definitely you, just a better version. 
           Create your digital counterpart, and take breathtaking pictures featuring you.
           </p>
 
           <Link
-            className="inline-flex w-100 items-center rounded-full shadow-lg hover:shadow-xl bg-gray-900 dark:bg-gray-900 text-white font-normal p-1"
+            className="inline-flex w-100 items-center rounded-full shadow-lg hover:shadow-xl bg-gray-900 dark:bg-gray-900 text-white text-sm font-normal px-2 py-1"
             href="./login"
             style={{
               borderRadius: "50px",
@@ -33,7 +33,7 @@ export function MainHero() {
               }}
               width={34}
             />
-            Create Your Clone 
+            Create Your Clone&nbsp; 
           </Link>
             <p className="text-xs text-gray-500 dark:text-gray-400">
             Already a member?
