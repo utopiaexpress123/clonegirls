@@ -58,7 +58,7 @@ export default async function Navbar() {
       )}
       <div className="flex gap-4 lg:ml-auto">
         {!user && (
-          <Link href="/login">
+          <Link href="/login" className="inline-flex w-100 items-center rounded-full shadow-xl hover:shadow-2xl bg-gray-900 dark:bg-gray-900 text-white text-sm font-normal px-2 py-1">
             <Button variant={"ghost"}>Login / Signup</Button>
           </Link>
         )}
