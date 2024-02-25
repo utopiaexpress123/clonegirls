@@ -15,6 +15,7 @@ export function MainHero() {
           It's pure magic!
           </p>
           <div>
+             <p><span className="text-sm">from </span><span className="text-lg text-bold">12€</span></p>
              <Link
               className="inline-flex w-100 items-center rounded-full shadow-lg hover:shadow-xl bg-pink-50 hover:bg-pink-100 dark:bg-pink-100 text-black-800 text-sm font-normal px-2 py-1 mr-2"
               href="./login"
@@ -33,7 +34,7 @@ export function MainHero() {
               }}
               width={34}
             />
-            Create your girl clone&nbsp;&nbsp; 
+            I'am a girl&nbsp;&nbsp; 
             </Link>
             <Link
               className="inline-flex w-100 items-center rounded-full shadow-lg hover:shadow-xl bg-blue-50 hover:bg-blue-100 dark:bg-blue-100 text-black-800 text-sm font-normal px-2 py-1 ml-2"
@@ -53,7 +54,7 @@ export function MainHero() {
               }}
               width={34}
             />
-            for Boys&nbsp;&nbsp; 
+            I'am a boy&nbsp;&nbsp; 
             </Link>
             <p className="py-2 text-xs text-gray-300 dark:text-gray-500">
             Already a member?
