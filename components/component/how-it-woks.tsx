@@ -16,7 +16,8 @@ export function HowItWoks() {
           <p className="text-sm text-gray-500 dark:text-gray-400">
           Upload at least 6-12 pictures of the person you want to clone. Make sure that only you are in the picture and that your face is clearly visible.
           </p>
-          <img
+        </div>
+        <img
             alt="Upload an image"
             className="mt-4 object-cover rounded-lg"
             height="auto"
@@ -27,7 +28,6 @@ export function HowItWoks() {
             }}
             width="full"
           />
-        </div>
       </Card>
       <div className="flex items-center justify-center w-full">
         <div className="h-9 w-0.5 bg-gray-200 dark:bg-gray-800" />
