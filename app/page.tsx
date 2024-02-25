@@ -34,7 +34,7 @@ export default async function Index() {
           <div className="mt-1">
             <MainHero/>
           </div>
-          <div className="mt-0">
+          <div className="px-4 items-center">
             <HowItWoks/>
           </div>
         </div>

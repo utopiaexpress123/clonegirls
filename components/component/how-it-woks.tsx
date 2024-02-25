@@ -7,14 +7,14 @@ import { Card } from "@/components/ui/card"
 export function HowItWoks() {
   return (
     <>
-      <Card className="flex w-full max-w-[80%] items-start p-4 shadow-lg m-4 border-0">
+      <Card className="flex w-full items-center p-4 shadow-lg border-0">
         <div className="flex items-center justify-center w-32 h-32 rounded-lg text-gray-100 dark:text-gray-100 font-thin text-8xl">
           01
         </div>
         <div className="grid gap-2 ml-6">
           <p className="text-lg font-semibold">Upload your photos</p>
           <p className="text-sm text-gray-500">
-          Use your camera or upload at least 6-12 pictures of you (or the person you want to clone). Make sure that only you are in the picture and that your face is clearly visible.
+          Upload at least 6-12 pictures of the person you want to clone. Make sure that only you are in the picture and that your face is clearly visible.
           </p>
           <img
             alt="Upload an image"
@@ -32,7 +32,7 @@ export function HowItWoks() {
       <div className="flex items-center justify-center w-full">
         <div className="h-6 w-0.5 bg-gray-200 dark:bg-gray-800" />
       </div>
-      <Card className="flex w-full items-start p-4 shadow-lg m-4 border-0">
+      <Card className="flex w-full items-center p-4 shadow-lg border-0">
         <div className="flex items-center justify-center w-32 h-32 rounded-lg text-gray-100 dark:text-gray-100 font-thin text-8xl">
           02
         </div>
@@ -45,7 +45,7 @@ export function HowItWoks() {
       <div className="flex items-center justify-center w-full">
         <div className="h-6 w-0.5 bg-gray-200 dark:bg-gray-800" />
       </div>
-      <Card className="flex w-full items-start p-4 shadow-lg m-4 border-0">
+      <Card className="flex w-full items-center p-4 shadow-lg border-0">
         <div className="flex items-center justify-center w-32 h-32 rounded-lg text-gray-100 dark:text-gray-100 font-thin text-8xl">
           03
         </div>
