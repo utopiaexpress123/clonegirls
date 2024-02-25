@@ -33,7 +33,7 @@ export function MainHero() {
               }}
               width={34}
             />
-            Create Your Clone&nbsp; 
+            Create Your Clone&nbsp;&nbsp; 
           </Link>
             <p className="text-xs text-gray-500 dark:text-gray-400">
             Already a member?
