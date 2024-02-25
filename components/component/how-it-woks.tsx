@@ -8,7 +8,7 @@ export function HowItWoks() {
   return (
     <>
       <Card className="border shadow-0 flex w-full items-center p-4 mt-4">
-        <div className="flex items-center justify-center w-32 h-32 rounded-sm text-gray-100 dark:text-gray-100 font-bold text-8xl">
+        <div className="flex items-flex-start justify-center w-32 h-32 rounded-sm text-gray-100 dark:text-gray-100 font-bold text-8xl">
           01
         </div>
         <div className="grid gap-2 ml-6">
