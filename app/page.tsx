@@ -34,7 +34,7 @@ export default async function Index() {
           <div className="">
             <MainHero/>
           </div>
-          <div className="px-4 py-4 items-center">
+          <div className="px-4 py-6 items-center">
             <HowItWoks/>
           </div>
         </div>
