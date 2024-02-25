@@ -9,14 +9,14 @@ export function MainHero() {
     return (
       <section className="w-full py-3 md:py-4 lg:py-4 xl:py-4">
         <div className="container px-4 md:px-6 flex flex-col items-start gap-2">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Meet your photogenic clone</h1>
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Create your photogenic clone</h1>
           <p className="max-w-[700px] text-gray-500 dark:text-gray-400">
           It's definitely you, just a better version. 
           Create your digital counterpart, and take breathtaking pictures featuring you.
           </p>
-          <p>
+
           <Link
-            className="flex items-center rounded-full shadow-md hover:shadow-lg"
+            className="inline-flex items-center rounded-full shadow-lg hover:shadow-xl bg-gray-900 dark:bg-gray-900 text-white font-normal p-1"
             href="./login"
             style={{
               borderRadius: "50px",
@@ -35,13 +35,13 @@ export function MainHero() {
             />
             Create Your Clone 
           </Link>
-            <span className="text-xs text-gray-500 dark:text-gray-400">
+            <p className="text-xs text-gray-500 dark:text-gray-400">
             Already a member?
             <Link className="underline" href="#">
               Sign In
             </Link>
-            </span>
-          </p>
+            </p>
+          
         </div>
       </section>
     )
