@@ -56,12 +56,6 @@ export function MainHero() {
             />
             I'am a boy&nbsp;&nbsp; 
             </Link>
-            <p className="py-2 text-xs text-gray-300 dark:text-gray-500">
-            Already a member?
-            <Link className="underline" href="#">
-              Sign In
-            </Link>
-            </p>
           </div>
         </div>
       </section>
