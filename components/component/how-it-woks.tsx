@@ -14,7 +14,7 @@ export function HowItWoks() {
         <div className="grid gap-2 ml-6">
           <p className="text-lg font-semibold">Upload your photos</p>
           <p className="text-sm text-gray-500 dark:text-gray-400">
-          Upload at least 6-12 pictures of the person you want to clone. Make sure that only you are in the picture and that your face is clearly visible.
+          Upload at least 6-12 pictures of yourself. Make sure that only you are in the picture and that your face is clearly visible.
           </p>
           <img
             alt="Upload an image"
