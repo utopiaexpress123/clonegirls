@@ -38,7 +38,7 @@ export function HowItWoks() {
         </div>
         <div className="grid gap-2 ml-6">
           <p className="text-lg font-semibold">Do the magic</p>
-          <p className="text-sm text-gray-500 dark:text-gray-400">Our AI-based service able "learn" your unique features and reproduce them down to the smallest detail.</p>
+          <p className="text-sm text-gray-500 dark:text-gray-400">Our AI-based service is able "learn" your unique features and reproduce them down to the smallest detail.</p>
 
         </div>
       </Card>
