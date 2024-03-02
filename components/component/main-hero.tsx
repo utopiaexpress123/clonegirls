@@ -15,7 +15,6 @@ export function MainHero() {
           It's you, in your perfect form. It's pure magic! ✨
           </p>
           <div className="flex items-center">
-             <span className="text-sm font-thin">24 masterpiece photo of you </span><span className="text-lg font-bold">12€ </span>
              <Link
               className="inline-flex w-100 items-center rounded-full shadow-lg hover:shadow-xl bg-pink-50 hover:bg-pink-100 dark:bg-pink-100 text-black-800 text-sm font-normal px-2 py-1 mr-2"
               href="./login"
@@ -36,6 +35,7 @@ export function MainHero() {
             />
             Create my clone&nbsp;&nbsp; 
             </Link>
+            <span className="text-sm font-thin">21 photo </span><span className="text-lg font-bold">12€ </span>
           </div>
         </div>
       </section>
