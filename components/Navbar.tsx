@@ -37,14 +37,14 @@ export default async function Navbar() {
   return (
     <div className="flex w-full px-4 lg:px-20 py-4 items-center text-center gap-8 justify-between">
       <div className="flex gap-2 h-full">
-      <Link href="/">
+      <Link href="https://utopia.express">
         <img width="93px" height="16px"
             src={logo.src}
             alt="Utopia Express"
             className="object-cover"
           />
         </Link>
-        Go to the <Badge className="rounded-full bg-sky-300 text-slate-500">Male version</Badge>
+         <Badge className="rounded-full bg-sky-200 text-slate-500">Male version</Badge>
       </div>
       {user && (
         <div className="hidden lg:flex flex-row gap-2">
