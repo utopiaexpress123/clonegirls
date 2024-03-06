@@ -35,7 +35,7 @@ export default async function Navbar() {
   } = await supabase.from("credits").select("*").eq("user_id", user?.id ?? '').single()
 
   return (
-    <div className="flex w-full px-4 lg:px-10 py-4 items-center text-center gap-8 justify-between">
+    <div className="fixed flex w-full px-4 lg:px-10 py-4 items-center text-center gap-8 justify-between">
       <div className="flex gap-2 h-full">
       <Link href="https://utopia.express">
         <img width="93px" height="16px"
@@ -47,8 +47,8 @@ export default async function Navbar() {
       </div>
       {user && (
         <div className="hidden lg:flex flex-row gap-2">
-          <Link href="/overview">
-            <Button variant={"ghost"}>Home</Button>
+          <Link href="https://clone.utopia.express/overview/">
+            <Button variant={"ghost"}>Male version</Button>
           </Link>
           {stripeIsConfigured && (
             <Link href="/get-credits">

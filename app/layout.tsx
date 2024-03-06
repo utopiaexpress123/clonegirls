@@ -31,7 +31,6 @@ export default function RootLayout({ children }: any) {
           <main className="flex flex-1 flex-col items-center py-1">
             {children}
           </main>
-          <Footer />
           <Toaster />
       </body>
     </html>
