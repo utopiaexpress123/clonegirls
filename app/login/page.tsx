@@ -16,7 +16,7 @@ export default async function Login() {
   return (
     <div className="flex-1 flex flex-col w-full px-8 sm:max-w-md justify-center gap-2">
       <form
-        className="flex-1 flex flex-col w-full justify-center gap-2 "
+        className="flex-1 flex flex-col w-full justify-center gap-2 rounded-full shadow-xl"
         action="/auth/sign-in"
         method="post"
       >
@@ -37,7 +37,7 @@ export default async function Login() {
               placeholder="you@example.com"
               required
             />
-            <Button>Continue</Button>
+            <Button className="">Continue</Button>
             <Messages />
           </CardContent>
           <CardFooter>
