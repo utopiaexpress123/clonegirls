@@ -12,7 +12,7 @@ export function MainHero() {
           <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Meet your digital twin</h1>
           <p className="py-2 text-lg max-w-[700px] text-gray-500 dark:text-gray-400">
           Create your AI counterpart, and make breathtaking pictures featuring you.
-          It's you, in your perfect form. It's pure magic!
+          It's you, in your perfect form. Pure magic!
           </p>
           <div className="flex items-center">
              <Link
