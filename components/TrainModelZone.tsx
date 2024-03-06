@@ -200,7 +200,7 @@ export default function TrainModelZone() {
                 </FormDescription>
                 <FormControl>
                   <Input
-                    placeholder="e.g. Natalie Headshots"
+                    placeholder="e.g. Lucy"
                     {...field}
                     className="max-w-screen-sm"
                     autoComplete="off"
@@ -232,10 +232,10 @@ export default function TrainModelZone() {
                 />
                 <Label
                   htmlFor="man"
-                  className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
+                  className="flex flex-col items-center justify-between rounded-lg border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
                 >
                   <FaMale className="mb-3 h-6 w-6" />
-                  Man
+                  Business, elegant
                 </Label>
               </div>
 
@@ -251,7 +251,7 @@ export default function TrainModelZone() {
                   className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
                 >
                   <FaFemale className="mb-3 h-6 w-6" />
-                  Woman
+                  Hot&Beautiful
                 </Label>
               </div>
               <div>
@@ -266,7 +266,7 @@ export default function TrainModelZone() {
                   className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
                 >
                   <FaRainbow className="mb-3 h-6 w-6" />
-                  Unisex
+                  Relaxed&Fun
                 </Label>
               </div>
             </RadioGroup>
@@ -277,8 +277,7 @@ export default function TrainModelZone() {
           >
             <FormLabel>Samples</FormLabel>
             <FormDescription>
-              Upload 4-10 images of the person you want to generate headshots
-              for.
+              Upload 4-10 images of the person you want to clone.
             </FormDescription>
             <div className="outline-dashed outline-2 outline-gray-100 hover:outline-blue-500 w-full h-full rounded-md p-4 flex justify-center align-middle">
               <input {...getInputProps()} />
@@ -286,9 +285,9 @@ export default function TrainModelZone() {
                 <p className="self-center">Drop the files here ...</p>
               ) : (
                 <div className="flex justify-center flex-col items-center gap-2">
-                  <FaImages size={32} className="text-gray-700" />
+                  <UploadIcon/>
                   <p className="self-center">
-                    Drag 'n' drop some files here, or click to select files.
+                    Drag 'n' drop your photos here, or use your camera
                   </p>
                 </div>
               )}
@@ -323,4 +322,13 @@ export default function TrainModelZone() {
       </Form>
     </div>
   );
+}
+
+function UploadIcon() {
+  return (
+<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 3.75H6A2.25 2.25 0 0 0 3.75 6v1.5M16.5 3.75H18A2.25 2.25 0 0 1 20.25 6v1.5m0 9V18A2.25 2.25 0 0 1 18 20.25h-1.5m-9 0H6A2.25 2.25 0 0 1 3.75 18v-1.5M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+</svg>
+
+  )
 }

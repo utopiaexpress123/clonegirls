@@ -9,6 +9,15 @@ import {
 } from "@/components/ui/card";
 import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+
 
 export default async function Index() {
   return (
@@ -25,9 +34,23 @@ export default async function Index() {
         </Link>
         <Card>
           <CardHeader>
-            <CardTitle>Train Model</CardTitle>
+            <CardTitle>Train a female model</CardTitle>
             <CardDescription>
-              Choose a name, type, and upload some photos to get started.
+              Choose a name, type, and upload some photos to get started. 
+<Dialog>
+  <DialogTrigger>How to get the best results?</DialogTrigger>
+  <DialogContent>
+    <DialogHeader>
+      <DialogTitle>Are you absolutely sure?</DialogTitle>
+      <DialogDescription>
+        This action cannot be undone. This will permanently delete your account
+        and remove your data from our servers.
+      </DialogDescription>
+    </DialogHeader>
+  </DialogContent>
+</Dialog>
+
+
             </CardDescription>
           </CardHeader>
           <CardContent className="grid gap-6">
