@@ -22,7 +22,7 @@ export default async function Login() {
       >
         <Card className="border-0 shadow-2xl rounded-xl">
           <CardHeader>
-            <CardTitle>Log In / Sign Up</CardTitle>
+            <CardTitle>Log In / Sign Up <Badge className="rounded-full bg-fuchsia-300 text-slate-500">Female Version</Badge></CardTitle>
             <CardDescription>
               Log into your account or sign up for a new one to get started.
             </CardDescription>
