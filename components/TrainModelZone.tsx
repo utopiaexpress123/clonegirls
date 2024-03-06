@@ -235,7 +235,16 @@ export default function TrainModelZone() {
                   htmlFor="man"
                   className="flex flex-col items-center justify-between rounded-lg border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
                 >
-                  <FaMale className="mb-3 h-6 w-6" />
+                <Image
+                  alt="Image"
+                  className="object-cover rounded-2xl"
+                  src="/elegant.png"
+                  width= "160"
+                  height= "220"
+                  style={{
+                    objectFit: "cover",
+                  }}
+                />
                   Business, elegant
                 </Label>
               </div>
@@ -255,8 +264,8 @@ export default function TrainModelZone() {
                   alt="Image"
                   className="object-cover rounded-2xl"
                   src="/hot.png"
-                  width= "285"
-                  height= "100"
+                  width= "160"
+                  height= "220"
                   style={{
                     objectFit: "cover",
                   }}
@@ -275,7 +284,16 @@ export default function TrainModelZone() {
                   htmlFor="person"
                   className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
                 >
-                  <FaRainbow className="mb-3 h-6 w-6" />
+                <Image
+                  alt="Image"
+                  className="object-cover rounded-2xl"
+                  src="/fairy.png"
+                  width= "160"
+                  height= "220"
+                  style={{
+                    objectFit: "cover",
+                  }}
+                />
                   Relaxed&Fun
                 </Label>
               </div>
