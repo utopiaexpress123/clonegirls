@@ -23,6 +23,7 @@ import { FaFemale, FaImages, FaMale, FaRainbow } from "react-icons/fa";
 import * as z from "zod";
 import { fileUploadFormSchema } from "@/types/zod";
 import { upload } from "@vercel/blob/client";
+import Image from "next/image";
 
 type FormInput = z.infer<typeof fileUploadFormSchema>;
 
@@ -250,7 +251,16 @@ export default function TrainModelZone() {
                   htmlFor="woman"
                   className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
                 >
-                  <FaFemale className="mb-3 h-6 w-6" />
+                <Image
+                  alt="Image"
+                  className="object-cover rounded-2xl"
+                  src="/hot.png"
+                  width= "285"
+                  height= "100"
+                  style={{
+                    objectFit: "cover",
+                  }}
+                />
                   Hot&Beautiful
                 </Label>
               </div>
@@ -314,7 +324,7 @@ export default function TrainModelZone() {
             </div>
           )}
 
-          <Button type="submit" className="w-full" isLoading={isLoading}>
+          <Button type="submit" className="w-full shadow-lg" isLoading={isLoading}>
             Train Model{" "}
             {stripeIsConfigured && <span className="ml-1">(1 Credit)</span>}
           </Button>
