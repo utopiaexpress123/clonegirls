@@ -20,7 +20,7 @@ export default async function Login() {
         action="/auth/sign-in"
         method="post"
       >
-        <Card>
+        <Card className="border-0 shadow-2xl rounded-xl">
           <CardHeader>
             <CardTitle>Log In / Sign Up</CardTitle>
             <CardDescription>

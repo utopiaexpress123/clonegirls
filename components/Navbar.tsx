@@ -15,6 +15,7 @@ import React from "react";
 import { Database } from "@/types/supabase";
 import ClientSideCredits from "./realtime/ClientSideCredits";
 import logo from "/public/logo.png";
+import { Badge } from "./ui/badge";
 
 export const dynamic = "force-dynamic";
 
@@ -34,7 +35,7 @@ export default async function Navbar() {
   } = await supabase.from("credits").select("*").eq("user_id", user?.id ?? '').single()
 
   return (
-    <div className="flex w-full px-4 lg:px-40 py-4 items-center border-b text-center gap-8 justify-between">
+    <div className="flex w-full px-4 lg:px-40 py-4 items-center text-center gap-8 justify-between">
       <div className="flex gap-2 h-full">
       <Link href="/">
         <img width="93px" height="16px"
@@ -43,6 +44,7 @@ export default async function Navbar() {
             className="object-cover"
           />
         </Link>
+        <Badge className="rounded-full bg-fuchsia-300 text-slate-500">Female version</Badge>
       </div>
       {user && (
         <div className="hidden lg:flex flex-row gap-2">
