@@ -21,7 +21,7 @@ import {
 
 export default async function Index() {
   return (
-    <div className="w-full bg-slate-100 p-4 rounded-xl ">
+    <div className="w-full ">
       <div
         id="train-model-container"
         className="flex flex-1 flex-col gap-2 px-2"
