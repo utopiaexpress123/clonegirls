@@ -34,7 +34,7 @@ export default async function Index() {
         </Link>
         <Card>
           <CardHeader>
-            <CardTitle>Train a female model</CardTitle>
+            <CardTitle className="text-lg text-extrabold">Train a female model</CardTitle>
             <CardDescription>
               Choose a name, type, and upload some photos to get started. 
               <Dialog>
