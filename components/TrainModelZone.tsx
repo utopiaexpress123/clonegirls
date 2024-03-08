@@ -235,17 +235,7 @@ export default function TrainModelZone() {
                   htmlFor="man"
                   className="flex flex-col items-center justify-between rounded-xl border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-fuchsia-300 [&:has([data-state=checked])]:border-fuchsia-300"
                 >
-                <Image
-                  alt="Image"
-                  className="object-cover rounded-2xl"
-                  src="/elegant.png"
-                  width= "160"
-                  height= "220"
-                  style={{
-                    objectFit: "cover",
-                  }}
-                />
-                  Business, elegant
+                  Business, Elegant
                 </Label>
               </div>
 
@@ -260,17 +250,7 @@ export default function TrainModelZone() {
                   htmlFor="woman"
                   className="flex flex-col items-center justify-between rounded-xl border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-fuchsia-300 [&:has([data-state=checked])]:border-fuchsia-300"
                 >
-                <Image
-                  alt="Image"
-                  className="object-cover rounded-2xl"
-                  src="/hot.png"
-                  width= "160"
-                  height= "220"
-                  style={{
-                    objectFit: "cover",
-                  }}
-                />
-                  Hot&Beautiful
+                  Hot & Flirty
                 </Label>
               </div>
               <div>
@@ -294,7 +274,7 @@ export default function TrainModelZone() {
                     objectFit: "cover",
                   }}
                 />
-                  Relaxed&Fun
+                  Casual & Fun
                 </Label>
               </div>
             </RadioGroup>
@@ -305,7 +285,7 @@ export default function TrainModelZone() {
           >
             <FormLabel>Samples</FormLabel>
             <FormDescription>
-              Upload 4-10 images of the person you want to clone.
+              Upload 4-12 images of the person you want to clone.
             </FormDescription>
             <div className="outline-dashed outline-2 outline-gray-100 hover:outline-blue-500 w-full h-full rounded-md p-4 flex justify-center align-middle">
               <input {...getInputProps()} />
@@ -354,7 +334,7 @@ export default function TrainModelZone() {
 
 function UploadIcon() {
   return (
-<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+<svg width="160" height="160" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 3.75H6A2.25 2.25 0 0 0 3.75 6v1.5M16.5 3.75H18A2.25 2.25 0 0 1 20.25 6v1.5m0 9V18A2.25 2.25 0 0 1 18 20.25h-1.5m-9 0H6A2.25 2.25 0 0 1 3.75 18v-1.5M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
 </svg>
 
