@@ -32,7 +32,7 @@ export default async function Index() {
             Go Back
           </Button>
         </Link>
-        <Card>
+        <Card className="w-1/2 rounded-xl bg-transparent">
           <CardHeader>
             <CardTitle className="text-lg text-extrabold">Train a female model</CardTitle>
             <CardDescription>
