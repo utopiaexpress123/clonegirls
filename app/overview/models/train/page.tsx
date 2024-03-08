@@ -41,10 +41,16 @@ export default async function Index() {
   <DialogTrigger>How to get the best results?</DialogTrigger>
   <DialogContent>
     <DialogHeader>
-      <DialogTitle>Are you absolutely sure?</DialogTitle>
+      <DialogTitle>How to get the best results?</DialogTitle>
       <DialogDescription>
-        This action cannot be undone. This will permanently delete your account
-        and remove your data from our servers.
+1. Upload both portrait and full body shots of the person
+2. Use 8-10 pictures of your subject. Preferably cropped to 1:1 aspect ratio.
+3. Use 6 photos of full body or entire object + 10 medium shot photos from the chest up + 10 close-ups.
+4. Variation is key - Change body pose for every picture, use pictures from different days backgrounds and lighting. Every picture of your subject should introduce new info about your subject.
+5. Avoid pictures taken at the same hour/day. For example few pictures with the same shirt will make the model learn the shirt as well as part of the subject.
+6. Always pick a new background.
+7. Do not upload pictures mixed with other people
+8. Do not upload upload funny faces
       </DialogDescription>
     </DialogHeader>
   </DialogContent>
