@@ -50,7 +50,6 @@ export default async function Index() {
   </DialogContent>
 </Dialog>
 
-
             </CardDescription>
           </CardHeader>
           <CardContent className="grid gap-6">
