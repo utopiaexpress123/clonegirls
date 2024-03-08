@@ -226,13 +226,13 @@ export default function TrainModelZone() {
             >
               <div>
                 <RadioGroupItem
-                  value="man"
-                  id="man"
+                  value="Business, elegant, costume"
+                  id="business"
                   className="peer sr-only"
-                  aria-label="man"
+                  aria-label="business"
                 />
                 <Label
-                  htmlFor="man"
+                  htmlFor="business"
                   className="flex flex-col items-center justify-between rounded-xl border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-fuchsia-300 [&:has([data-state=checked])]:border-fuchsia-300"
                 >
                   Business, Elegant
@@ -241,13 +241,13 @@ export default function TrainModelZone() {
 
               <div>
                 <RadioGroupItem
-                  value="woman"
-                  id="woman"
+                  value="Hot, Flirty"
+                  id="hot"
                   className="peer sr-only"
-                  aria-label="woman"
+                  aria-label="hot"
                 />
                 <Label
-                  htmlFor="woman"
+                  htmlFor="hot"
                   className="flex flex-col items-center justify-between rounded-xl border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-fuchsia-300 [&:has([data-state=checked])]:border-fuchsia-300"
                 >
                   Hot & Flirty
@@ -255,25 +255,15 @@ export default function TrainModelZone() {
               </div>
               <div>
                 <RadioGroupItem
-                  value="person"
-                  id="person"
+                  value="Casual, Fun"
+                  id="casual"
                   className="peer sr-only"
-                  aria-label="person"
+                  aria-label="casual"
                 />
                 <Label
-                  htmlFor="person"
+                  htmlFor="casual"
                   className="flex flex-col items-center justify-between rounded-xl border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-fuchsia-300 [&:has([data-state=checked])]:border-fuchsia-300"
                 >
-                <Image
-                  alt="Image"
-                  className="object-cover rounded-2xl"
-                  src="/fairy.png"
-                  width= "160"
-                  height= "220"
-                  style={{
-                    objectFit: "cover",
-                  }}
-                />
                   Casual & Fun
                 </Label>
               </div>
@@ -283,11 +273,11 @@ export default function TrainModelZone() {
             {...getRootProps()}
             className=" rounded-md justify-center align-middle cursor-pointer flex flex-col gap-4"
           >
-            <FormLabel>Samples</FormLabel>
+            <FormLabel>Training data</FormLabel>
             <FormDescription>
               Upload 4-12 images of the person you want to clone.
             </FormDescription>
-            <div className="outline-dashed outline-2 outline-gray-100 hover:outline-blue-500 w-full h-full rounded-md p-4 flex justify-center align-middle">
+            <div className="outline-dashed outline-2 outline-gray-200 hover:outline-blue-500 w-full h-full rounded-md p-4 flex justify-center align-middle">
               <input {...getInputProps()} />
               {isDragActive ? (
                 <p className="self-center">Drop the files here ...</p>

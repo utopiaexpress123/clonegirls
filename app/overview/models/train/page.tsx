@@ -37,25 +37,26 @@ export default async function Index() {
             <CardTitle>Train a female model</CardTitle>
             <CardDescription>
               Choose a name, type, and upload some photos to get started. 
-<Dialog>
-  <DialogTrigger>How to get the best results?</DialogTrigger>
-  <DialogContent>
-    <DialogHeader>
-      <DialogTitle>How to get the best results?</DialogTitle>
-      <DialogDescription>
-1. Upload both portrait and full body shots of the person
-2. Use 8-10 pictures of your subject. Preferably cropped to 1:1 aspect ratio.
-3. Use 6 photos of full body or entire object + 10 medium shot photos from the chest up + 10 close-ups.
-4. Variation is key - Change body pose for every picture, use pictures from different days backgrounds and lighting. Every picture of your subject should introduce new info about your subject.
-5. Avoid pictures taken at the same hour/day. For example few pictures with the same shirt will make the model learn the shirt as well as part of the subject.
-6. Always pick a new background.
-7. Do not upload pictures mixed with other people
-8. Do not upload upload funny faces
-      </DialogDescription>
-    </DialogHeader>
-  </DialogContent>
-</Dialog>
-
+              <Dialog>
+                <DialogTrigger className="text-fuchsia-400">How to get the best results?</DialogTrigger>
+                <DialogContent>
+                  <DialogHeader>
+                    <DialogTitle>How to get the best results?</DialogTitle>
+                    <DialogDescription>
+                      <ol className="list-decimal">
+                        <li>1. Upload both portrait and full body shots of the person</li>
+                        <li>2. Use 8-10 pictures of your subject. Preferably cropped to 1:1 aspect ratio.</li>
+                        <li>3. Use 6 photos of full body or entire object + 10 medium shot photos from the chest up + 10 close-ups.</li>
+                        <li>4. Variation is key - Change body pose for every picture, use pictures from different days backgrounds and lighting. Every picture of your subject should introduce new info about your subject.</li>
+                        <li>5. Avoid pictures taken at the same hour/day. For example few pictures with the same shirt will make the model learn the shirt as well as part of the subject.</li>
+                        <li>6. Always pick a new background.</li>
+                        <li>7. Do not upload pictures mixed with other people</li>
+                        <li>8. Do not upload upload funny faces</li>
+                      </ol>
+                    </DialogDescription>
+                  </DialogHeader>
+                </DialogContent>
+              </Dialog>
             </CardDescription>
           </CardHeader>
           <CardContent className="grid gap-6">
