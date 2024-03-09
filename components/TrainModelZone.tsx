@@ -24,6 +24,16 @@ import * as z from "zod";
 import { fileUploadFormSchema } from "@/types/zod";
 import { upload } from "@vercel/blob/client";
 import Image from "next/image";
+import Link from "next/link";
+import { FaArrowLeft } from "react-icons/fa";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 type FormInput = z.infer<typeof fileUploadFormSchema>;
 
@@ -184,138 +194,169 @@ export default function TrainModelZone() {
   const modelType = form.watch("type");
 
   return (
-    <div>
+    <div className="">
+
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="rounded-md flex flex-col gap-8"
+          className="rounded-md flex flex-col gap-8 relative"
         >
-          <FormField
-            control={form.control}
-            name="name"
-            render={({ field }) => (
-              <FormItem className="w-full rounded-md">
-                <FormLabel>Name</FormLabel>
-                <FormDescription>
-                  Give your model a name so you can easily identify it later.
-                </FormDescription>
-                <FormControl>
-                  <Input
-                    placeholder="e.g. Lucy"
-                    {...field}
-                    className="max-w-screen-sm"
-                    autoComplete="off"
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <div className="flex flex-col gap-4">
-            <FormLabel>Type</FormLabel>
-            <FormDescription>
-              Select the type of photos you want to generate.
-            </FormDescription>
-            <RadioGroup
-              defaultValue={modelType}
-              className="grid grid-cols-3 gap-4"
-              value={modelType}
-              onValueChange={(value) => {
-                form.setValue("type", value);
-              }}
-            >
-              <div>
-                <RadioGroupItem
-                  value="Business, elegant, costume"
-                  id="business"
-                  className="peer sr-only"
-                  aria-label="business"
-                />
-                <Label
-                  htmlFor="business"
-                  className="flex flex-col items-center justify-between rounded-xl border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-fuchsia-300 [&:has([data-state=checked])]:border-fuchsia-300"
-                >
-                  Business, Elegant
-                </Label>
-              </div>
-
-              <div>
-                <RadioGroupItem
-                  value="Hot, Flirty"
-                  id="hot"
-                  className="peer sr-only"
-                  aria-label="hot"
-                />
-                <Label
-                  htmlFor="hot"
-                  className="flex flex-col items-center justify-between rounded-xl border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-fuchsia-300 [&:has([data-state=checked])]:border-fuchsia-300"
-                >
-                  Hot & Flirty
-                </Label>
-              </div>
-              <div>
-                <RadioGroupItem
-                  value="Casual, Fun"
-                  id="casual"
-                  className="peer sr-only"
-                  aria-label="casual"
-                />
-                <Label
-                  htmlFor="casual"
-                  className="flex flex-col items-center justify-between rounded-xl border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-fuchsia-300 [&:has([data-state=checked])]:border-fuchsia-300"
-                >
-                  Casual & Fun
-                </Label>
-              </div>
-            </RadioGroup>
-          </div>
-          <div
-            {...getRootProps()}
-            className=" rounded-md justify-center align-middle cursor-pointer flex flex-col gap-4"
-          >
-            <FormLabel>Training data</FormLabel>
-            <FormDescription>
-              Upload 4-12 images of the person you want to clone.
-            </FormDescription>
-            <div className="outline-dashed outline-2 outline-gray-200 hover:outline-blue-500 w-full h-full rounded-md p-4 flex justify-center align-middle">
-              <input {...getInputProps()} />
-              {isDragActive ? (
-                <p className="self-center">Drop the files here ...</p>
-              ) : (
-                <div className="flex justify-center flex-col items-center gap-2">
-                  <UploadIcon/>
-                  <p className="self-center">
-                    Drag 'n' drop your photos here, or use your camera
-                  </p>
-                </div>
-              )}
-            </div>
-          </div>
-          {files.length > 0 && (
-            <div className="flex flex-row gap-4 flex-wrap">
-              {files.map((file) => (
-                <div key={file.name} className="flex flex-col gap-1">
-                  <img
-                    src={URL.createObjectURL(file)}
-                    className="rounded-md w-24 h-24 object-cover"
-                  />
-                  <Button
-                    variant="outline"
-                    size={"sm"}
-                    className="w-full"
-                    onClick={() => removeFile(file)}
-                  >
-                    Remove
+            <div className="mx-auto">
+              <h1 className="text-3xl font-extrabold tracking-tight text-gray-600">
+                <Link href="/overview" className="text-sm w-fit ">
+                  <Button variant={"link"}>
+                    <BackIcon/>
                   </Button>
-                </div>
-              ))}
-            </div>
-          )}
+                </Link>
+                Let's start a training
+              </h1>
 
-          <Button type="submit" className="w-full shadow-lg" isLoading={isLoading}>
-            Train Model{" "}
-            {stripeIsConfigured && <span className="ml-1">(1 Credit)</span>}
-          </Button>
+              <FormField
+                control={form.control}
+                name="name"
+                render={({ field }) => (
+                    <FormItem className="pt-6">
+                      <FormLabel className="text-gray-600">Give your model a name</FormLabel>
+                      <FormControl>
+                        <Input
+                          placeholder="e.g. Lucy"
+                          {...field}
+                          className=" shadow-md text-fuchsia-400 flex flex-col items-center justify-between border-2 rounded-full h-12 bg-gray-100 p-4 hover:bg-accent hover:text-accent-foreground"
+                          autoComplete="off"
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                )}
+              />
+            
+            
+              <div className="flex flex-col gap-4">
+                <FormLabel className="pt-9">Select the type of photos you want to generate</FormLabel>
+
+                <RadioGroup
+                  defaultValue={modelType}
+                  className="grid grid-cols-3 gap-4"
+                  value={modelType}
+                  onValueChange={(value) => {
+                    form.setValue("type", value);
+                  }}
+                >
+                  <div>
+                    <RadioGroupItem
+                      value="Business, elegant, costume"
+                      id="business"
+                      className="peer sr-only"
+                      aria-label="business"
+                    />
+                    <Label
+                      htmlFor="business"
+                      className="shadow-md flex flex-col items-center justify-between rounded-full bg-transparent p-4 hover:bg-accent hover:text-accent-foreground border-2 peer-data-[state=checked]:border-fuchsia-300 [&:has([data-state=checked])]:bg-fuchsia-300"
+                    >
+                      Business, Elegant
+                    </Label>
+                  </div>
+
+                  <div>
+                    <RadioGroupItem
+                      value="Hot, Flirty"
+                      id="hot"
+                      className="peer sr-only"
+                      aria-label="hot"
+                    />
+                    <Label
+                      htmlFor="hot"
+                      className="shadow-md flex flex-col items-center justify-between rounded-full bg-transparent p-4 hover:bg-accent hover:text-accent-foreground border-2 peer-data-[state=checked]:border-fuchsia-300 [&:has([data-state=checked])]:bg-fuchsia-300"
+                    >
+                      Hot & Flirty
+                    </Label>
+                  </div>
+
+                  <div>
+                    <RadioGroupItem
+                      value="Casual, Fun"
+                      id="casual"
+                      className="peer sr-only"
+                      aria-label="casual"
+                    />
+                    <Label
+                      htmlFor="casual"
+                      className="shadow-md flex flex-col items-center justify-between rounded-full bg-transparent p-4 hover:bg-accent hover:text-accent-foreground border-2 peer-data-[state=checked]:border-fuchsia-300 [&:has([data-state=checked])]:bg-fuchsia-300"
+                    >
+                      Casual & Fun
+                    </Label>
+                  </div>
+                </RadioGroup>
+              </div>  
+
+              <div
+                {...getRootProps()}
+                className="rounded-md justify-center align-middle cursor-pointer flex flex-col gap-4"
+                  >
+                <FormLabel className="pt-9">Upload 4-12 images of the person you want to clone</FormLabel>
+
+                <Dialog>
+                  <DialogTrigger className="text-fuchsia-400 text-start text-xs">How to get the best results?</DialogTrigger>
+                  <DialogContent>
+                    <DialogHeader>
+                      <DialogTitle className="text-xs">How to get the best results?</DialogTitle>
+                      <DialogDescription>
+                        <ol className="list-decimal">
+                          <li>1. Upload both portrait and full body shots of the person</li>
+                          <li>2. Use 8-10 pictures of your subject. Preferably cropped to 1:1 aspect ratio.</li>
+                          <li>3. Use 6 photos of full body or entire object + 10 medium shot photos from the chest up + 10 close-ups.</li>
+                          <li>4. Variation is key - Change body pose for every picture, use pictures from different days backgrounds and lighting. Every picture of your subject should introduce new info about your subject.</li>
+                          <li>5. Avoid pictures taken at the same hour/day. For example few pictures with the same shirt will make the model learn the shirt as well as part of the subject.</li>
+                          <li>6. Always pick a new background.</li>
+                          <li>7. Do not upload pictures mixed with other people</li>
+                          <li>8. Do not upload upload funny faces</li>
+                        </ol>
+                      </DialogDescription>
+                    </DialogHeader>
+                  </DialogContent>
+                </Dialog>
+                <div className="shadow-md outline outline-2 outline-gray-100 rounded-2xl  hover:outline-fuchsia-300 w-full h-full p-4 flex justify-center align-middle">
+                  <input {...getInputProps()} />
+                  {isDragActive ? (
+                    <p className="self-center">Drop the files here ...</p>
+                  ) : (
+                    <div className="flex justify-center flex-col items-center gap-2">
+                      <UploadIcon/>
+                      <p className="self-center text-xs">
+                        Drag 'n' drop your photos here, or use your camera
+                      </p>
+                    </div>
+                  )}
+                </div>
+                {files.length > 0 && (
+                  <div className="flex flex-row gap-4 flex-wrap">
+                    {files.map((file) => (
+                      <div key={file.name} className="flex flex-col gap-1">
+                        <img
+                          src={URL.createObjectURL(file)}
+                          className="rounded-md w-24 h-24 object-cover"
+                        />
+                        <Button
+                          variant="outline"
+                          size={"sm"}
+                          className="w-full"
+                          onClick={() => removeFile(file)}
+                        >
+                          Remove
+                        </Button>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                <Button type="submit" className="shadow-xl w-full" isLoading={isLoading}>
+                  Train Model{" "}
+                  {stripeIsConfigured && <span className="ml-1">(1 Credit)</span>}
+                </Button>
+              </div>
+
+            </div>
+
         </form>
       </Form>
     </div>
@@ -324,9 +365,18 @@ export default function TrainModelZone() {
 
 function UploadIcon() {
   return (
-<svg width="160" height="160" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 3.75H6A2.25 2.25 0 0 0 3.75 6v1.5M16.5 3.75H18A2.25 2.25 0 0 1 20.25 6v1.5m0 9V18A2.25 2.25 0 0 1 18 20.25h-1.5m-9 0H6A2.25 2.25 0 0 1 3.75 18v-1.5M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+<svg width="160" height="160" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
+  <path className="stroke-fuchsia-300" strokeLinecap="round" strokeLinejoin="round" d="M7.5 7.5h-.75A2.25 2.25 0 0 0 4.5 9.75v7.5a2.25 2.25 0 0 0 2.25 2.25h7.5a2.25 2.25 0 0 0 2.25-2.25v-7.5a2.25 2.25 0 0 0-2.25-2.25h-.75m0-3-3-3m0 0-3 3m3-3v11.25m6-2.25h.75a2.25 2.25 0 0 1 2.25 2.25v7.5a2.25 2.25 0 0 1-2.25 2.25h-7.5a2.25 2.25 0 0 1-2.25-2.25v-.75" />
 </svg>
-
   )
 }
+
+function BackIcon() {
+  return (
+<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
+</svg>
+  )
+}
+
+

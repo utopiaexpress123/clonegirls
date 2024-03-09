@@ -27,7 +27,7 @@ export default async function ModelsTable({ models }: ModelsTableProps) {
   };
 
   return (
-    <div className="rounded-md border">
+    <div className="rounded-md border shadow-xl">
       <Table className="w-full">
         <TableHeader>
           <TableRow>

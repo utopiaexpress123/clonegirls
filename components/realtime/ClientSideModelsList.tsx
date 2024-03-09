@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { Database } from "@/types/supabase";
 import { modelRowWithSamples } from "@/types/utils";
 import { createClient } from "@supabase/supabase-js";
@@ -62,7 +63,7 @@ export default function ClientSideModelsList({
           <div className="flex flex-row gap-4 w-full justify-between items-center text-center">
             <p className="text-sm">Your models</p>
             <Link href="/overview/models/train" className="w-fit">
-              <Button size={"sm"}>
+              <Button size={"sm"} variant={"default"} className="rounded-full">
                 Train model
               </Button>
             </Link>
