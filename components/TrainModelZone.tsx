@@ -199,11 +199,11 @@ export default function TrainModelZone() {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="rounded-md flex flex-col gap-8 relative"
+          className="rounded-md flex flex-col gap-8 relative shadow-none"
         >
-            <div className="mx-auto">
-              <h1 className="text-3xl font-extrabold tracking-tight text-gray-600">
-                <Link href="/overview" className="text-sm w-fit ">
+            <div className="mx-auto md:w-1/2">
+              <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight text-gray-600">
+                <Link href="/overview" className="text-sm w-fit">
                   <Button variant={"link"}>
                     <BackIcon/>
                   </Button>
@@ -216,12 +216,12 @@ export default function TrainModelZone() {
                 name="name"
                 render={({ field }) => (
                     <FormItem className="pt-6">
-                      <FormLabel className="text-gray-600">Give your model a name</FormLabel>
+                      <FormLabel className="text-gray-400 font-normal">Give your model a name</FormLabel>
                       <FormControl>
                         <Input
                           placeholder="e.g. Lucy"
                           {...field}
-                          className=" shadow-md text-fuchsia-400 flex flex-col items-center justify-between border-2 rounded-full h-12 bg-gray-100 p-4 hover:bg-accent hover:text-accent-foreground"
+                          className=" shadow-md text-fuchsia-400 flex flex-col items-center justify-between border-2 rounded-full h-12 bg-gray-100 hover:border-fuchsia-300 target:border-fuchsia-300 p-4 hover:bg-accent hover:text-accent-foreground"
                           autoComplete="off"
                         />
                       </FormControl>
@@ -232,7 +232,7 @@ export default function TrainModelZone() {
             
             
               <div className="flex flex-col gap-4">
-                <FormLabel className="pt-9">Select the type of photos you want to generate</FormLabel>
+                <FormLabel className="pt-9 text-gray-400 font-normal">Select the type of photos you want to generate</FormLabel>
 
                 <RadioGroup
                   defaultValue={modelType}
@@ -251,7 +251,7 @@ export default function TrainModelZone() {
                     />
                     <Label
                       htmlFor="business"
-                      className="shadow-md flex flex-col items-center justify-between rounded-full bg-transparent p-4 hover:bg-accent hover:text-accent-foreground border-2 peer-data-[state=checked]:border-fuchsia-300 [&:has([data-state=checked])]:bg-fuchsia-300"
+                      className="text-gray-600 font-normal shadow-md flex flex-col items-center justify-between rounded-full bg-transparent p-4 hover:bg-accent hover:text-accent-foreground border-2 peer-data-[state=checked]:border-fuchsia-300 [&:has([data-state=checked])]:bg-fuchsia-300"
                     >
                       Business, Elegant
                     </Label>
@@ -266,7 +266,7 @@ export default function TrainModelZone() {
                     />
                     <Label
                       htmlFor="hot"
-                      className="shadow-md flex flex-col items-center justify-between rounded-full bg-transparent p-4 hover:bg-accent hover:text-accent-foreground border-2 peer-data-[state=checked]:border-fuchsia-300 [&:has([data-state=checked])]:bg-fuchsia-300"
+                      className="text-gray-600 font-normal shadow-md flex flex-col items-center justify-between rounded-full bg-transparent p-4 hover:bg-accent hover:text-accent-foreground border-2 peer-data-[state=checked]:border-fuchsia-300 [&:has([data-state=checked])]:bg-fuchsia-300"
                     >
                       Hot & Flirty
                     </Label>
@@ -281,7 +281,7 @@ export default function TrainModelZone() {
                     />
                     <Label
                       htmlFor="casual"
-                      className="shadow-md flex flex-col items-center justify-between rounded-full bg-transparent p-4 hover:bg-accent hover:text-accent-foreground border-2 peer-data-[state=checked]:border-fuchsia-300 [&:has([data-state=checked])]:bg-fuchsia-300"
+                      className="text-gray-600 font-normal shadow-md flex flex-col items-center justify-between rounded-full bg-transparent p-4 hover:bg-accent hover:text-accent-foreground border-2 peer-data-[state=checked]:border-fuchsia-300 [&:has([data-state=checked])]:bg-fuchsia-300"
                     >
                       Casual & Fun
                     </Label>
@@ -349,7 +349,10 @@ export default function TrainModelZone() {
                   </div>
                 )}
 
-                <Button type="submit" className="shadow-xl w-full" isLoading={isLoading}>
+                <Button type="submit" className="mt-4 p-6 mx-auto text-md shadow-xl md:w-2/3 h-10 mb-16 bg-gray-700 hover:bg-gray-600" isLoading={isLoading}>
+                  <span className="mr-4">
+                    <MagicIcon/>
+                  </span>
                   Train Model{" "}
                   {stripeIsConfigured && <span className="ml-1">(1 Credit)</span>}
                 </Button>
@@ -373,10 +376,17 @@ function UploadIcon() {
 
 function BackIcon() {
   return (
-<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 stroke-gray-400 hover:stroke-fuchsia-400">
   <path strokeLinecap="round" strokeLinejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
 </svg>
   )
 }
+
+function MagicIcon() {
+  return (
+<svg width="24" height="24" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.9 0.499976C13.9 0.279062 13.7209 0.0999756 13.5 0.0999756C13.2791 0.0999756 13.1 0.279062 13.1 0.499976V1.09998H12.5C12.2791 1.09998 12.1 1.27906 12.1 1.49998C12.1 1.72089 12.2791 1.89998 12.5 1.89998H13.1V2.49998C13.1 2.72089 13.2791 2.89998 13.5 2.89998C13.7209 2.89998 13.9 2.72089 13.9 2.49998V1.89998H14.5C14.7209 1.89998 14.9 1.72089 14.9 1.49998C14.9 1.27906 14.7209 1.09998 14.5 1.09998H13.9V0.499976ZM11.8536 3.14642C12.0488 3.34168 12.0488 3.65826 11.8536 3.85353L10.8536 4.85353C10.6583 5.04879 10.3417 5.04879 10.1465 4.85353C9.9512 4.65827 9.9512 4.34169 10.1465 4.14642L11.1464 3.14643C11.3417 2.95116 11.6583 2.95116 11.8536 3.14642ZM9.85357 5.14642C10.0488 5.34168 10.0488 5.65827 9.85357 5.85353L2.85355 12.8535C2.65829 13.0488 2.34171 13.0488 2.14645 12.8535C1.95118 12.6583 1.95118 12.3417 2.14645 12.1464L9.14646 5.14642C9.34172 4.95116 9.65831 4.95116 9.85357 5.14642ZM13.5 5.09998C13.7209 5.09998 13.9 5.27906 13.9 5.49998V6.09998H14.5C14.7209 6.09998 14.9 6.27906 14.9 6.49998C14.9 6.72089 14.7209 6.89998 14.5 6.89998H13.9V7.49998C13.9 7.72089 13.7209 7.89998 13.5 7.89998C13.2791 7.89998 13.1 7.72089 13.1 7.49998V6.89998H12.5C12.2791 6.89998 12.1 6.72089 12.1 6.49998C12.1 6.27906 12.2791 6.09998 12.5 6.09998H13.1V5.49998C13.1 5.27906 13.2791 5.09998 13.5 5.09998ZM8.90002 0.499976C8.90002 0.279062 8.72093 0.0999756 8.50002 0.0999756C8.2791 0.0999756 8.10002 0.279062 8.10002 0.499976V1.09998H7.50002C7.2791 1.09998 7.10002 1.27906 7.10002 1.49998C7.10002 1.72089 7.2791 1.89998 7.50002 1.89998H8.10002V2.49998C8.10002 2.72089 8.2791 2.89998 8.50002 2.89998C8.72093 2.89998 8.90002 2.72089 8.90002 2.49998V1.89998H9.50002C9.72093 1.89998 9.90002 1.72089 9.90002 1.49998C9.90002 1.27906 9.72093 1.09998 9.50002 1.09998H8.90002V0.499976Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+  )
+}
+
 
 

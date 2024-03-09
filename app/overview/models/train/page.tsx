@@ -16,10 +16,10 @@ export default async function Index() {
     <div className="max-auto">
       <div
         id="train-model-container"
-        className="flex flex-1 flex-col pt-8"
+        className="flex flex-1 flex-col py-6"
       >
         <Card className="bg-transparent shadow-none">
-          <CardContent className="grid gap-6">
+          <CardContent className="grid gap-6 shadow-none">
             <TrainModelZone />
           </CardContent>
         </Card>

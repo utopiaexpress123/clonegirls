@@ -12,7 +12,6 @@ import { MainHero } from "@/components/component/main-hero";
 import { HowItWoks } from "@/components/component/how-it-woks";
 import { FAQ } from "@/components/component/faq";
 
-
 export const dynamic = "force-dynamic";
 
 export default async function Index() {

@@ -10,20 +10,33 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Link from "next/link";
+
 
 export const dynamic = "force-dynamic";
 
 export default async function Login() {
   return (
-    <div className="flex-1 flex flex-col w-full px-8 sm:max-w-md justify-center gap-2">
+    <div className="flex-1 flex flex-col w-full py-10 sm:max-w-md justify-center gap-2">
+
+
+<Tabs defaultValue="account" className="w-[400px]">
+  <TabsList className="w-full bg-transparent">
+    <TabsTrigger value="account" className="text-start shadow-lg">Female Version</TabsTrigger>
+    <Link href="" className="text-sm text-gray-500 ml-4">
+      <p>Go to Male Version</p>
+      </Link>
+  </TabsList>
+  <TabsContent value="account" >
       <form
         className="flex-1 flex flex-col w-full justify-center gap-2 rounded-full shadow-xl"
         action="/auth/sign-in"
         method="post"
       >
-        <Card className="border-0 shadow-2xl rounded-xl">
+        <Card className="border-0 shadow-2xl rounded-2xl">
           <CardHeader>
-            <CardTitle>Log In / Sign Up <Badge className="rounded-full bg-fuchsia-300 text-slate-500">Female Version</Badge></CardTitle>
+            <CardTitle>Log In / Sign Up</CardTitle>
             <CardDescription>
               Log into your account or sign up for a new one to get started.
             </CardDescription>
@@ -33,16 +46,16 @@ export default async function Login() {
               Email
             </Label>
             <input
-              className="rounded-md px-4 py-2 bg-inherit border"
+              className="rounded-full px-4 py-2 bg-inherit border"
               name="email"
               placeholder="you@example.com"
               required
             />
-            <Button className="">Continue</Button>
+            <Button className="shadow-md">Continue</Button>
             <Messages />
           </CardContent>
           <CardFooter>
-            <p className="text-sm">
+            <p className="text-xs text-gray-400">
               By signing up, you agree to our{" "}
               <a href="#" className="underline">
                 Terms of Service
@@ -56,6 +69,20 @@ export default async function Login() {
           </CardFooter>
         </Card>
       </form>
+  </TabsContent>
+  <TabsContent value="password">Change your password here.</TabsContent>
+</Tabs>
+
     </div>
   );
 }
+
+function LinkIcon() {
+  return (
+<svg className="text-right" width="12" height="12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+ <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+</svg> 
+  )
+}
+
+
