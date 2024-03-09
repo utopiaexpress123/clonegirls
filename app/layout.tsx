@@ -28,7 +28,7 @@ export default function RootLayout({ children }: any) {
               <Navbar />
             </Suspense>
           </section>
-          <main className="flex flex-1 flex-col items-center py-1 pt-14 md:w-3/5">
+          <main className="flex flex-1 flex-col items-center py-1 pt-14">
             {children}
           </main>
           <Toaster />
