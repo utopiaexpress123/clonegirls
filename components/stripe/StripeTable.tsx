@@ -33,7 +33,7 @@ const StripePricingTable = ({ user }: Props) => {
   }, []);
 
   return (
-    <div className='flex flex-1 flex-col w-full'>
+    <div className="flex flex-1 flex-col w-full py-9 bg-transparent">
       <stripe-pricing-table 
         pricing-table-id="prctbl_1Of5G5FL4KlHxxuROngXTFEV" 
         publishable-key="pk_live_51MmfroFL4KlHxxuRb1p4WZKCPCkZl59fxqx7dByExiy7qBofyKGoonZhmImuwjBCTtwZtFgni8fMkhOUiWvVbeOp00hZt5h5ka" 
