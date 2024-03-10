@@ -24,7 +24,7 @@ export default function RootLayout({ children }: any) {
           fontSans.variable
         )}>
           <section>
-            <Suspense fallback={<div className="mt-20 flex w-full px-4 lg:px-20 py-4 items-center border-b text-center gap-8 justify-between h-[69px]" />}>
+            <Suspense fallback={<div className="" />}>
               <Navbar />
             </Suspense>
           </section>
