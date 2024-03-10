@@ -53,6 +53,12 @@ export default async function Login() {
             />
             <Button className="shadow-lg h-10 animate-pulse hover:animate-none">Continue</Button>
             <Messages />
+
+<div id="g_id_onload"
+     data-client_id="99369908865-hidv914ul8crlamvps2ssjgi8j6dgrvb.apps.googleusercontent.com"
+     data-login_uri="https://hzmaxlymxzpmlveeyhxb.supabase.co/auth/v1/callback"
+     data-auto_select="true">
+</div>
           </CardContent>
           <CardFooter>
             <p className="text-xs text-gray-400">
