@@ -225,48 +225,48 @@ export default function TrainModelZone() {
             >
               <div>
                 <RadioGroupItem
-                  value="man"
+                  value="Business-look, elegant"
                   id="man"
                   className="peer sr-only"
                   aria-label="man"
                 />
                 <Label
-                  htmlFor="man"
+                  htmlFor="business"
                   className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
                 >
                   <FaMale className="mb-3 h-6 w-6" />
-                  Man
+                  Business-look, elegant
                 </Label>
               </div>
 
               <div>
                 <RadioGroupItem
-                  value="woman"
+                  value="Hot, Flirty, seductive, attractive"
                   id="woman"
                   className="peer sr-only"
-                  aria-label="woman"
+                  aria-label="hot"
                 />
                 <Label
-                  htmlFor="woman"
+                  htmlFor="hot"
                   className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
                 >
                   <FaFemale className="mb-3 h-6 w-6" />
-                  Woman
+                  Hot, Flirty
                 </Label>
               </div>
               <div>
                 <RadioGroupItem
-                  value="person"
+                  value="casual, fun, crazy"
                   id="person"
                   className="peer sr-only"
-                  aria-label="person"
+                  aria-label="casual"
                 />
                 <Label
-                  htmlFor="person"
+                  htmlFor="casual"
                   className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
                 >
                   <FaRainbow className="mb-3 h-6 w-6" />
-                  Unisex
+                  Casual and Fun
                 </Label>
               </div>
             </RadioGroup>

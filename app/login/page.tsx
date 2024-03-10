@@ -54,23 +54,6 @@ export default async function Login() {
             <Button className="shadow-lg h-10 animate-pulse hover:animate-none">Continue</Button>
             <Messages />
 
-<div id="g_id_onload"
-     data-client_id="99369908865-hidv914ul8crlamvps2ssjgi8j6dgrvb.apps.googleusercontent.com"
-     data-context="signin"
-     data-ux_mode="popup"
-     data-login_uri="https://clonegirls.utopia.express/login"
-     data-auto_select="true"
-     data-itp_support="true">
-</div>
-
-<div className="g_id_signin"
-     data-type="standard"
-     data-shape="pill"
-     data-theme="outline"
-     data-text="signin_with"
-     data-size="large"
-     data-logo_alignment="left">
-</div>
           </CardContent>
           <CardFooter>
             <p className="text-xs text-gray-400">
