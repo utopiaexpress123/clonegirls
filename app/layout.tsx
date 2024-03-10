@@ -20,7 +20,7 @@ export default function RootLayout({ children }: any) {
   return (
     <html lang="en">
       <body className={cn(
-          "min-h-screen bg-background font-sans antialiased bg-gradient-to-tl from-fuchsia-50 to-slate-200",
+          "min-h-screen bg-background font-sans antialiased bg-gradient-to-tl from-fuchsia-100 to-slate-200",
           fontSans.variable
         )}>
           <section>
