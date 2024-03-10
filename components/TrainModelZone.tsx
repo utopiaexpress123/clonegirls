@@ -213,7 +213,7 @@ export default function TrainModelZone() {
           <div className="flex flex-col gap-4">
             <FormLabel>Type</FormLabel>
             <FormDescription>
-              Select the type of headshots you want to generate.
+              Select a style of photos you want to generate.
             </FormDescription>
             <RadioGroup
               defaultValue={modelType}
@@ -232,9 +232,8 @@ export default function TrainModelZone() {
                 />
                 <Label
                   htmlFor="business"
-                  className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
+                  className="flex flex-col items-center justify-between rounded-xl border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-fuchsia-300 [&:has([data-state=checked])]:border-fuchsia-300"
                 >
-                  <FaMale className="mb-3 h-6 w-6" />
                   Business-look, elegant
                 </Label>
               </div>
@@ -248,9 +247,8 @@ export default function TrainModelZone() {
                 />
                 <Label
                   htmlFor="hot"
-                  className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
+                  className="flex flex-col items-center justify-between rounded-xl border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-fuchsia-300 [&:has([data-state=checked])]:border-fuchsia-300"
                 >
-                  <FaFemale className="mb-3 h-6 w-6" />
                   Hot, Flirty
                 </Label>
               </div>
@@ -263,9 +261,8 @@ export default function TrainModelZone() {
                 />
                 <Label
                   htmlFor="casual"
-                  className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
+                  className="flex flex-col items-center justify-between rounded-xl border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-fuchsia-300 [&:has([data-state=checked])]:border-fuchsia-300"
                 >
-                  <FaRainbow className="mb-3 h-6 w-6" />
                   Casual and Fun
                 </Label>
               </div>
