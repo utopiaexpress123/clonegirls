@@ -348,7 +348,8 @@ export default function TrainModelZone() {
                     ))}
                   </div>
                 )}
-
+              </div>
+              <div>
                 <Button type="submit" className="mt-4 p-6 mx-auto text-md shadow-xl md:w-2/3 h-10 mb-16 bg-gray-700 hover:bg-gray-600" isLoading={isLoading}>
                   <span className="mr-4">
                     <MagicIcon/>
