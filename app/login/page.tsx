@@ -21,7 +21,7 @@ export default async function Login() {
     <div className="flex-1 flex flex-col w-full py-6 sm:max-w-md justify-center gap-2">
 
 
-<Tabs defaultValue="account" className="w-[400px] transition-all">
+<Tabs defaultValue="account" className="w-[400px] transition ease-in">
   <TabsList className="w-full bg-transparent">
     <TabsTrigger value="account" className="text-start shadow-lg">Female Version</TabsTrigger>
     <Link href="https://clone.utopia.express/login/" className="text-sm text-gray-500 hover:text-sky-300 ml-4">
