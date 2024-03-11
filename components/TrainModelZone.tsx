@@ -192,7 +192,6 @@ export default function TrainModelZone() {
           <FormField
             control={form.control}
             name="name"
-            rules={{ pattern: /^[A-Za-z\s]+$/ }}
             render={({ field }) => (
               <FormItem className="w-full rounded-md">
                 <FormLabel>Name</FormLabel>
@@ -214,7 +213,7 @@ export default function TrainModelZone() {
           <div className="flex flex-col gap-4">
             <FormLabel>Type</FormLabel>
             <FormDescription>
-              Select a style of photos you want to generate.
+              Select the type of headshots you want to generate.
             </FormDescription>
             <RadioGroup
               defaultValue={modelType}
@@ -226,45 +225,48 @@ export default function TrainModelZone() {
             >
               <div>
                 <RadioGroupItem
-                  value="Business-look, elegant"
+                  value="man"
                   id="man"
                   className="peer sr-only"
                   aria-label="man"
                 />
                 <Label
                   htmlFor="man"
-                  className="flex flex-col items-center justify-between rounded-xl border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-fuchsia-400 [&:has([data-state=checked])]:border-fuchsia-400"
+                  className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
                 >
-                  Business-look, elegant
+                  <FaMale className="mb-3 h-6 w-6" />
+                  Man
                 </Label>
               </div>
 
               <div>
                 <RadioGroupItem
-                  value="Hot, Flirty, seductive, attractive"
+                  value="woman"
                   id="woman"
                   className="peer sr-only"
                   aria-label="woman"
                 />
                 <Label
                   htmlFor="woman"
-                  className="flex flex-col items-center justify-between rounded-xl border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-fuchsia-300 [&:has([data-state=checked])]:border-fuchsia-300"
+                  className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
                 >
-                  Hot, Flirty
+                  <FaFemale className="mb-3 h-6 w-6" />
+                  Woman
                 </Label>
               </div>
               <div>
                 <RadioGroupItem
-                  value="casual, fun, crazy"
+                  value="person"
                   id="person"
                   className="peer sr-only"
                   aria-label="person"
                 />
                 <Label
                   htmlFor="person"
-                  className="flex flex-col items-center justify-between rounded-xl border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-fuchsia-300 [&:has([data-state=checked])]:border-fuchsia-300"
+                  className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
                 >
-                  Casual and Fun
+                  <FaRainbow className="mb-3 h-6 w-6" />
+                  Unisex
                 </Label>
               </div>
             </RadioGroup>
