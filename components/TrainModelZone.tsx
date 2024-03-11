@@ -53,17 +53,6 @@ export default function TrainModelZone() {
           (file: File) => !files.some((f) => f.name === file.name)
         ) || [];
 
-      // if user tries to upload more than 10 files, display a toast
-      if (newFiles.length + files.length > 10) {
-        toast({
-          title: "Too many images",
-          description:
-            "You can only upload up to 10 images in total. Please try again.",
-          duration: 5000,
-        });
-        return;
-      }
-
       // display a toast if any duplicate files were found
       if (newFiles.length !== acceptedFiles.length) {
         toast({
@@ -211,10 +200,7 @@ export default function TrainModelZone() {
             )}
           />
           <div className="flex flex-col gap-4">
-            <FormLabel>Type</FormLabel>
-            <FormDescription>
-              Select the type of headshots you want to generate.
-            </FormDescription>
+            <FormLabel>What is your type?</FormLabel>
             <RadioGroup
               defaultValue={modelType}
               className="grid grid-cols-3 gap-4"
@@ -277,8 +263,7 @@ export default function TrainModelZone() {
           >
             <FormLabel>Samples</FormLabel>
             <FormDescription>
-              Upload 4-10 images of the person you want to generate headshots
-              for.
+              Upload images of the person you want to generate headshots for.
             </FormDescription>
             <div className="outline-dashed outline-2 outline-gray-100 hover:outline-blue-500 w-full h-full rounded-md p-4 flex justify-center align-middle">
               <input {...getInputProps()} />
