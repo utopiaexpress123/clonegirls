@@ -8,8 +8,8 @@ export const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
 });
-
 import { Suspense } from "react";
+import Script from "next/script";
 
 export const metadata = {
   title: "Utopia Clone",
@@ -18,7 +18,21 @@ export const metadata = {
 
 export default function RootLayout({ children }: any) {
   return (
-    <html lang="en">
+<html lang="en">
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-SCVCC4H9TG"
+        />
+        <Script id="google-analytics">
+          {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', ${'${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}'});
+          `}
+        </Script>
+      </head>
       <body className={cn(
           "min-h-screen bg-background font-sans antialiased bg-gradient-to-tl from-fuchsia-100 to-slate-200",
           fontSans.variable
