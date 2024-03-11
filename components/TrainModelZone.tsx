@@ -192,6 +192,7 @@ export default function TrainModelZone() {
           <FormField
             control={form.control}
             name="name"
+            rules={{ pattern: /^[A-Za-z\s]+$/ }}
             render={({ field }) => (
               <FormItem className="w-full rounded-md">
                 <FormLabel>Name</FormLabel>
