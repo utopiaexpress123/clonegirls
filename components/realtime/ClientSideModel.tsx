@@ -64,7 +64,6 @@ export default function ClientSideModel({
           <div className="flex flex-col w-full lg:w-2/3 rounded-md">
             {model.status === "finished" && (
               <div className="flex flex-1 flex-col gap-2">
-                <h1 className="text-xl">Results</h1>
                 <div className="flex flex-row flex-wrap gap-4">
                   {serverImages?.map((image) => (
                     <div key={image.id}>
