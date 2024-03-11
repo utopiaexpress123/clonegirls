@@ -194,13 +194,13 @@ export default function TrainModelZone() {
             name="name"
             render={({ field }) => (
               <FormItem className="w-full rounded-md">
-                <FormLabel>Name</FormLabel>
+                <FormLabel>Describe the picture, what you want to see</FormLabel>
                 <FormDescription>
-                  Give your model a name so you can easily identify it later.
+                  Or select one of our predefined prompt
                 </FormDescription>
                 <FormControl>
                   <Input
-                    placeholder="e.g. Natalie Headshots"
+                    placeholder="e.g. as a rock star in the 90's"
                     {...field}
                     className="max-w-screen-sm"
                     autoComplete="off"
