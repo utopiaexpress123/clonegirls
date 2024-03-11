@@ -232,8 +232,8 @@ export default function TrainModelZone() {
                   aria-label="man"
                 />
                 <Label
-                  htmlFor="business"
-                  className="flex flex-col items-center justify-between rounded-xl border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-fuchsia-300 [&:has([data-state=checked])]:border-fuchsia-300"
+                  htmlFor="man"
+                  className="flex flex-col items-center justify-between rounded-xl border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-fuchsia-400 [&:has([data-state=checked])]:border-fuchsia-400"
                 >
                   Business-look, elegant
                 </Label>
@@ -244,10 +244,10 @@ export default function TrainModelZone() {
                   value="Hot, Flirty, seductive, attractive"
                   id="woman"
                   className="peer sr-only"
-                  aria-label="hot"
+                  aria-label="woman"
                 />
                 <Label
-                  htmlFor="hot"
+                  htmlFor="woman"
                   className="flex flex-col items-center justify-between rounded-xl border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-fuchsia-300 [&:has([data-state=checked])]:border-fuchsia-300"
                 >
                   Hot, Flirty
@@ -258,10 +258,10 @@ export default function TrainModelZone() {
                   value="casual, fun, crazy"
                   id="person"
                   className="peer sr-only"
-                  aria-label="casual"
+                  aria-label="person"
                 />
                 <Label
-                  htmlFor="casual"
+                  htmlFor="person"
                   className="flex flex-col items-center justify-between rounded-xl border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-fuchsia-300 [&:has([data-state=checked])]:border-fuchsia-300"
                 >
                   Casual and Fun
