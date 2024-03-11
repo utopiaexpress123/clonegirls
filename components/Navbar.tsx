@@ -47,7 +47,7 @@ export default async function Navbar() {
       </div>
       {user && (
         <div className="hidden lg:flex flex-row gap-2">
-          <Link href="/overview">
+          <Link href="https://clonegirls.utopia.express/">
             <Button variant={"ghost"} className="text-fuchsia-400">Female version</Button>
           </Link>          
           <Link href="/overview">
