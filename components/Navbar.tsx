@@ -50,9 +50,6 @@ export default async function Navbar() {
           <Link href="/overview">
             <Button variant={"ghost"}>Your Clones</Button>
           </Link>
-          <Link href="/overview/models/train">
-            <Button variant={"ghost"}>Get Credits</Button>
-          </Link>
           {stripeIsConfigured && (
             <Link href="/get-credits">
               <Button variant={"ghost"}>Get Credits</Button>
