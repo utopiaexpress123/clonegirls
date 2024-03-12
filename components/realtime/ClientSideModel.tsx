@@ -7,6 +7,7 @@ import { createClient } from "@supabase/supabase-js";
 import { useEffect, useState } from "react";
 import { AspectRatio } from "../ui/aspect-ratio";
 import { Badge } from "../ui/badge";
+import Confetti from "react-confetti/dist/types/Confetti";
 
 export const revalidate = 0;
 
@@ -28,6 +29,7 @@ export default function ClientSideModel({
   const [model, setModel] = useState<modelRow>(serverModel);
 
   useEffect(() => {
+
     const channel = supabase
       .channel("realtime-model")
       .on(
