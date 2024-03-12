@@ -38,7 +38,6 @@ export default function TrainModelZone() {
     resolver: zodResolver(fileUploadFormSchema),
     defaultValues: {
       name: "",
-      cloneid: "",
       type: "man",
     },
   });
@@ -127,7 +126,6 @@ export default function TrainModelZone() {
     const payload = {
       urls: blobUrls,
       name: form.getValues("name").trim(),
-      cloneid: form.getValues("cloneid").trim(),
       type: form.getValues("type"),
     };
 
@@ -191,27 +189,6 @@ export default function TrainModelZone() {
           onSubmit={form.handleSubmit(onSubmit)}
           className="rounded-md flex flex-col gap-8"
         >
-          <FormField
-            control={form.control}
-            cloneid="cloneid"
-            render={({ field }) => (
-              <FormItem className="w-full rounded-md">
-                <FormLabel>CloneID</FormLabel>
-                <FormDescription>
-                  Enter your CloneID
-                </FormDescription>
-                <FormControl>
-                  <Input
-                    placeholder="e.g. as a rock star in the 90's"
-                    {...field}
-                    className="max-w-screen-sm"
-                    autoComplete="off"
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
           <FormField
             control={form.control}
             name="name"
