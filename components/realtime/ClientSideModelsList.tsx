@@ -9,7 +9,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FaImages } from "react-icons/fa";
 import ModelsTable from "../ModelsTable";
-import Confetti from "@/components/ui/confetti";
 
 export const revalidate = 0;
 
@@ -61,7 +60,6 @@ export default function ClientSideModelsList({
     <div id="train-model-container" className="w-full py-16">
       {models && models.length > 0 && (
         <div className="flex flex-col gap-4">
-          <Confetti/>
           <div className="flex flex-row gap-4 w-full justify-between items-center text-center">
             <p className="text-sm">Your models</p>
             <Link href="/overview/models/train" className="w-fit">
