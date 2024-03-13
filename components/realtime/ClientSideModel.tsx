@@ -49,7 +49,7 @@ export default function ClientSideModel({
       <div className="flex flex-col w-full mt-4 gap-8">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-0">
           {samples && (
-            <div className="flex w-full lg:w-1/2 flex-col gap-2">
+            <div className="flex w-full md:w-1/3 flex-col gap-2">
               <p className="text-sm">Training Data</p>
               <div className="flex flex-row gap-4 flex-wrap">
                 {samples.map((sample) => (
@@ -61,7 +61,7 @@ export default function ClientSideModel({
               </div>
             </div>
           )}
-          <div className="flex flex-col w-full lg:w-1/2 rounded-md">
+          <div className="flex flex-col w-full md:w-2/3 rounded-md">
             {model.status === "finished" && (
               <div className="flex flex-1 flex-col gap-2">
                 <h1 className="text-xl">Results</h1>
@@ -70,7 +70,7 @@ export default function ClientSideModel({
                     <div key={image.id}>
                       <img
                         src={image.uri}
-                        className="rounded-md w-60 object-cover"
+                        className="rounded-md w-auto object-cover"
                       />
                     </div>
                   ))}
