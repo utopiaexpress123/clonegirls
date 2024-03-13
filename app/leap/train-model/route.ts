@@ -21,7 +21,6 @@ export async function POST(request: Request) {
   const images = payload.urls;
   const type = payload.type;
   const name = payload.name;
-  const cloneid = payload.cloneid;
 
   const supabase = createRouteHandlerClient<Database>({ cookies });
 
@@ -49,10 +48,10 @@ export async function POST(request: Request) {
     );
   }
 
-  if (images?.length < 1) {
+  if (images?.length < 4) {
     return NextResponse.json(
       {
-        message: "Upload at least 1 sample images",
+        message: "Upload at least 4 sample images",
       },
       { status: 500 }
     );
@@ -128,7 +127,6 @@ export async function POST(request: Request) {
       input: {
         title: name, // title of the model
         name: type, // name of the model type
-        cloneid: cloneid,
         image_urls: images,
       },
     });
