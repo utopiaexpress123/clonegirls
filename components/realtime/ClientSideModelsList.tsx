@@ -73,7 +73,6 @@ export default function ClientSideModelsList({
       )}
       {models && models.length === 0 && (
         <div className="flex flex-col gap-4 items-center">
-          <Confetti/>
         <UploadIcon/>
           <h1 className="text-1xl md:text-2xl text-gray-600">
             Get started by training your first model.
