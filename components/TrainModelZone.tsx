@@ -54,15 +54,15 @@ export default function TrainModelZone() {
         ) || [];
 
       // if user tries to upload more than 10 files, display a toast
-//      if (newFiles.length + files.length > 10) {
-//        toast({
-//          title: "Too many images",
-//          description:
-//            "You can only upload up to 10 images in total. Please try again.",
-//          duration: 5000,
-//        });
-//        return;
-//      }
+      if (newFiles.length + files.length > 10) {
+        toast({
+          title: "Too many images",
+          description:
+            "You can only upload up to 10 images in total. Please try again.",
+          duration: 5000,
+        });
+        return;
+      }
 
       // display a toast if any duplicate files were found
       if (newFiles.length !== acceptedFiles.length) {
@@ -194,13 +194,13 @@ export default function TrainModelZone() {
             name="name"
             render={({ field }) => (
               <FormItem className="w-full rounded-md">
-                <FormLabel>Describe the picture, what you want to see</FormLabel>
+                <FormLabel>Name</FormLabel>
                 <FormDescription>
-                  Or select one of our predefined prompt
+                  Give your model a name so you can easily identify it later.
                 </FormDescription>
                 <FormControl>
                   <Input
-                    placeholder="e.g. as a rock star in the 90's"
+                    placeholder="e.g. Natalie Headshots"
                     {...field}
                     className="max-w-screen-sm"
                     autoComplete="off"
@@ -211,7 +211,10 @@ export default function TrainModelZone() {
             )}
           />
           <div className="flex flex-col gap-4">
-            <FormLabel>What is your type?</FormLabel>
+            <FormLabel>Type</FormLabel>
+            <FormDescription>
+              Select the type of headshots you want to generate.
+            </FormDescription>
             <RadioGroup
               defaultValue={modelType}
               className="grid grid-cols-3 gap-4"
